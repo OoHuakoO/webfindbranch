@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: local('Roboto-Regular'),
+    url(~assets/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: local('Roboto-Light'), url(~assets/Roboto-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: local('Roboto-Medium'), url(~assets/Roboto-Medium.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: local('Roboto-Bold'), url(~assets/Roboto-Bold.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sukhumvit';
+  src: local('Sukhumvit'),
+    url(~assets/SukhumvitSet-Medium.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Sukhumvit-light';
+  src: local('Sukhumvit-light'),
+    url(~assets/SukhumvitSet-Light.ttf) format('truetype');
+}
+
+html {
+  font-family: 'Roboto-Regular';
+  font-family: 'Roboto-Light';
+  font-family: 'Roboto-Medium';
+  font-family: 'Roboto-Bold';
+  font-family: 'Sukhumvit';
+  font-family: 'Sukhumvit-light';
+}
