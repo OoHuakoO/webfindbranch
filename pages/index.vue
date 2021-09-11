@@ -41,21 +41,21 @@ p {
 }
 .title {
   font-weight: bold;
-  font-size: 60px;
+  font-size: 4vw;
   text-align: center;
 }
 .subtitle {
   text-align: center;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 2.6vw;
 }
 .btn-secondary {
   background-color: #feb249;
   border-color: #feb249;
   width: 100%;
-  padding: 20px;
+  padding:1vw;
   font-family: 'Sukhumvit';
-  font-size: 25px;
+  font-size: 1.8vw;
   border-radius: 10px;
   margin-top: 40px;
 }

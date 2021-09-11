@@ -18,12 +18,12 @@
 }
 .navbar-dark .navbar-nav .nav-link {
   color: #53d3d1;
-  font-size: 30px;
+  font-size: 2vw;
   font-family: 'Sukhumvit';
 }
 img {
-  margin-right: 10px;
-  width: 30px;
-  margin-bottom: 3px;
+  margin-right: 0.5vw;
+  width: 2vw;
+  margin-bottom: 2%;
 }
 </style>

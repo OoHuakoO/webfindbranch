@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="body">
     <Header />
-    <div class="body">
+    <div class="bigContainer">
       <video
         width="60%"
         controls="controls"
@@ -49,17 +49,16 @@ export default {
 }
 </script>
 <style scoped>
+html,
+.body {
+  min-height: 100%;
+}
 * {
   font-family: 'Sukhumvit';
 }
 p {
   font-weight: bold;
-  font-size: 25px;
-}
-.test {
-  position: absolute;
-  z-index: 1;
-  font-size: 30px;
+  font-size: 1.8vw;
 }
 .yellowText {
   color: #feb249;
@@ -69,8 +68,8 @@ p {
 }
 .underContainer {
   width: 25%;
-  margin-bottom: 100px;
-  margin-left: 80px;
+  margin-bottom: 4%;
+  margin-left: 7%;
 }
 .container {
   display: flex;
@@ -80,33 +79,20 @@ p {
   align-items: center;
   margin-top: 5%;
 }
-.body {
+.bigContainer {
   justify-content: center;
   align-items: center;
-  padding: 50px;
+  padding: 5vw;
   display: flex;
   flex-direction: column;
-}
-p {
-  font-family: 'Sukhumvit';
-}
-.title {
-  font-weight: bold;
-  font-size: 60px;
-  text-align: center;
-}
-.subtitle {
-  text-align: center;
-  font-weight: 300;
-  font-size: 30px;
 }
 .btn-secondary {
   background-color: #feb249;
   border-color: #feb249;
   width: 100%;
-  padding: 20px;
+  padding:1vw;
   font-family: 'Sukhumvit';
-  font-size: 25px;
+  font-size: 1.8vw;
   border-radius: 10px;
 }
 .btn-link {

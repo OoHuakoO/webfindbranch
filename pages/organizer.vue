@@ -2,35 +2,27 @@
   <div class="body">
     <Header />
     <div class="bigContainer">
-      <p class="title">เกี่ยวกับคณะผู้จัดทำ</p>
+      <p class="title">เกี่ยวกับผู้จัดทำ</p>
       <div class="mt-4 boxCard">
-        <b-card
-          img-src="https://placekitten.com/300/300"
-          img-alt="Card image"
-          img-left
-          class="mb-3 boxTop"
-        >
-          <b-card-text>
-            <span> ดุลยภาพ ศรีอำนวย</span> <br />
-            <span>นักศึกษา คณะเทคโนโลยีสารสนเทสและนวัตรกรรม </span> <br />
-            <span>สาขาวิชา เทคโนโลยีสารสนเทศและนวัตรกรรม</span> <br />
-            <span>มหาวิทยาลัยกรุงเทพ</span> <br />
-            <span>E-mail : mingplagad@gmail.com</span> <br />
-          </b-card-text>
-        </b-card>
-        <b-card
-          img-src="https://placekitten.com/300/300"
-          img-alt="Card image"
-          img-left
-          class="mb-3 boxBottom"
-        >
-          <b-card-text>
-            <span>เธียรนรา อิทธิปาทานันท์</span> <br />
-            <span>นักศึกษา คณะเทคโนโลยีสารสนเทสและนวัตรกรรม</span> <br />
-            <span>สาขาวิชา เทคโนโลยีสารสนเทศและนวัตรกรรม</span> <br />
-            <span>มหาวิทยาลัยกรุงเทพ</span> <br />
-            <span> E-mail : ihqharain@gmail.com</span> <br />
-          </b-card-text>
+        <b-card v-for="(item, index) in organizer" :key="index" class="card">
+          <b-row no-gutters>
+            <b-col md="4">
+              <b-card-img
+                :src="item.picture"
+                alt="Image"
+                class="rounded-1"
+              ></b-card-img>
+            </b-col>
+            <b-col md="8">
+              <b-card-text class="rightBox">
+                <span> {{ item.name }}</span> <br />
+                <span>{{ item.faculty }} </span> <br />
+                <span>{{ item.branch }}</span> <br />
+                <span>{{ item.university }}</span> <br />
+                <span>{{ item.email }}</span> <br />
+              </b-card-text>
+            </b-col>
+          </b-row>
         </b-card>
       </div>
     </div>
@@ -44,24 +36,52 @@ export default {
   components: {
     Header,
   },
+  data() {
+    return {
+      organizer: [
+        {
+          name: 'ดุลยภาพ ศรีอำนวย',
+          faculty: 'นักศึกษา คณะเทคโนโลยีสารสนเทสและนวัตกรรม',
+          branch: 'สาขาวิชา เทคโนโลยีสารสนเทศและนวัตรกรรม',
+          university: 'มหาวิทยาลัยกรุงเทพ',
+          email: 'E-mail : mingplagad@gmail.com',
+          picture:
+            'https://cdn.dribbble.com/users/206362/screenshots/14453538/media/cfe80febeed64218b34e18f518ca9ae9.jpg?compress=1&resize=400x300',
+        },
+        {
+          name: 'เธียรนรา อิทธิปาทานันท์',
+          faculty: 'นักศึกษา คณะเทคโนโลยีสารสนเทสและนวัตกรรม',
+          branch: 'สาขาวิชา เทคโนโลยีสารสนเทศและนวัตรกรรม',
+          university: 'มหาวิทยาลัยกรุงเทพ',
+          email: 'E-mail : ihqharain@gmail.com',
+          picture:
+            'https://cdn.dribbble.com/users/206362/screenshots/14453538/media/cfe80febeed64218b34e18f518ca9ae9.jpg?compress=1&resize=400x300',
+        },
+      ],
+    }
+  },
 }
 </script>
 <style scoped>
+* {
+  font-family: 'Sukhumvit';
+}
 html,
 .body {
   min-height: 100%;
 }
-.boxTop {
-  margin-bottom: 3rem !important;
-  padding: 20px;
-  font-size: 22px;
-}
-.boxBottom {
-  font-size: 22px;
-  padding: 20px;
+.rightBox {
+  font-size: 1.5vw;
+  padding: 1px;
+  margin-left: 3%;
+  margin-top: 2%;
+  width: 100%;
 }
 .boxCard {
-  width: 80%;
+  width: 75%;
+}
+.card {
+  margin-bottom: 2%;
 }
 .bigContainer {
   justify-content: center;
@@ -70,31 +90,10 @@ html,
   display: flex;
   flex-direction: column;
 }
-p {
-  font-family: 'Sukhumvit';
-}
 .title {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3.2vw;
   text-align: center;
   color: #53d3d1;
-}
-.subtitle {
-  text-align: center;
-  font-weight: 300;
-  font-size: 30px;
-}
-.btn-secondary {
-  background-color: #feb249;
-  border-color: #feb249;
-  width: 100%;
-  padding: 20px;
-  font-family: 'Sukhumvit';
-  font-size: 25px;
-  border-radius: 10px;
-  margin-top: 40px;
-}
-.btn-link {
-  width: 30%;
 }
 </style>

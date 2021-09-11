@@ -6,47 +6,35 @@
       <p class="subtitle">สามารถเลือกมากกว่าหนึ่งหัวข้อ</p>
       <div class="flexButton">
         <div class="columnButton">
-          <div class="rowButton">
-            <div class="radioButton"></div>
-            <span>เล่นวิดีโอเกม</span>
-          </div>
-          <div class="rowButton">
-            <div class="radioButton"></div>
-            <span>ศิลปะกับการวาดรูป</span>
-          </div>
-          <div class="rowButton">
-            <div class="radioButton"></div>
-            <span>คณิตศาสตร์และการคำนวณ</span>
-          </div>
-          <div class="rowButton">
-            <div class="radioButton"></div>
-            <span>การเขียนโปรแกรม</span>
-          </div>
-          <div class="rowButton">
-            <div class="radioButton"></div>
-            <span>การใช้ซอฟต์แวร์</span>
+          <div
+            v-for="(item, index) in choice.slice(0, 5)"
+            class="rowButton"
+            :key="index"
+          >
+            <div
+              @click="selectedChoice(index)"
+              :class="choice[index].check ? 'activeRadio' : 'nonActiveRadio'"
+            >
+              <div class="smallCircle" v-if="choice[index].check"></div>
+            </div>
+            <span> {{ item.name }}</span>
           </div>
         </div>
         <div class="columnButton">
-          <div class="rowButton">
-            <div class="radioButton"></div>
-            <span>E - Sport</span>
-          </div>
-          <div class="rowButton">
-            <div class="radioButton"></div>
-            <span>ระบบอินเทอร์เน็ต</span>
-          </div>
-          <div class="rowButton">
-            <div class="radioButton"></div>
-            <span>ธุรกิจคอมพิวเตอร์</span>
-          </div>
-          <div class="rowButton">
-            <div class="radioButton"></div>
-            <span>ออกแบบกราฟิก </span>
-          </div>
-          <div class="rowButton">
-            <div class="radioButton"></div>
-            <span>แอนิเมชัน</span>
+          <div
+            v-for="(item, index) in choice.slice(5, 10)"
+            class="rowButton"
+            :key="index"
+          >
+            <div
+              @click="selectedChoice(index + 5)"
+              :class="
+                choice[index + 5].check ? 'activeRadio' : 'nonActiveRadio'
+              "
+            >
+              <div class="smallCircle" v-if="choice[index + 5].check"></div>
+            </div>
+            <span> {{ item.name }}</span>
           </div>
         </div>
       </div>
@@ -60,10 +48,60 @@
 
 <script>
 import Header from '@/components/header'
-
 export default {
   components: {
     Header,
+  },
+  data() {
+    return {
+      choice: [
+        {
+          name: 'เล่นวิดีโอเกม',
+          check: false,
+        },
+        {
+          name: 'ศิลปะกับการวาดรูป',
+          check: false,
+        },
+        {
+          name: 'คณิตศาสตร์และการคำนวณ',
+          check: false,
+        },
+        {
+          name: 'การเขียนโปรแกรม',
+          check: false,
+        },
+        {
+          name: 'การใช้ซอฟต์แวร์',
+          check: false,
+        },
+        {
+          name: 'E - Sport',
+          check: false,
+        },
+        {
+          name: 'ระบบอินเทอร์เน็ต',
+          check: false,
+        },
+        {
+          name: 'ธุรกิจคอมพิวเตอร์',
+          check: false,
+        },
+        {
+          name: 'ออกแบบกราฟิก',
+          check: false,
+        },
+        {
+          name: 'แอนิเมชัน',
+          check: false,
+        },
+      ],
+    }
+  },
+  methods: {
+    selectedChoice(index) {
+      this.choice[index].check = !this.choice[index].check
+    },
   },
 }
 </script>
@@ -78,7 +116,7 @@ html,
 span {
   margin-left: 10px;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 .bigContainer {
   justify-content: center;
@@ -90,34 +128,58 @@ span {
 }
 .title {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 3vw;
   text-align: center;
 }
 .subtitle {
   text-align: center;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 2vw;
 }
 .note {
   margin-top: 30px;
-  font-size: 20px;
+  font-size: 1.5vw;
   font-weight: 300;
 }
 .btn-secondary {
   background-color: #feb249;
   border-color: #feb249;
   width: 100%;
-  padding: 20px;
+  padding:1vw;
   font-family: 'Sukhumvit';
-  font-size: 25px;
+  font-size: 1.8vw;
   border-radius: 10px;
-  margin-top: 40px;
+  margin-top: 3vh;
 }
-.radioButton {
-  width: 25px;
-  height: 25px;
+.smallCircle {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  border-radius: 200px;
+}
+.activeRadio {
+  width: 2.6vw;
+  height: 2.6vw;
   background-color: #feb249;
-  border-radius: 20px;
+  border-radius: 200px;
+  cursor: pointer;
+  padding: 0.6vw;
+}
+.nonActiveRadio {
+  width: 2.6vw;
+  height: 2.6vw;
+  background-color: #ffffff;
+  border-radius: 200px;
+  border: solid 2px #696880;
+  cursor: pointer;
+}
+.nonActiveRadio:hover {
+  width: 2.6vw;
+  height: 2.6vw;
+  background-color: #ffffff;
+  border-radius: 200px;
+  border: solid 2px #feb249;
+  cursor: pointer;
 }
 .rowButton {
   flex-direction: row;
