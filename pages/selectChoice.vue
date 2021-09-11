@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="body">
     <Header />
-    <div class="body">
+    <div class="bigContainer">
       <p class="title">โปรดเลือกความสนใจของคุณ</p>
       <p class="subtitle">สามารถเลือกมากกว่าหนึ่งหัวข้อ</p>
       <div class="flexButton">
@@ -51,7 +51,7 @@
         </div>
       </div>
       <p class="note">หมายเหตุ : หลังจากนี้คุณยังคงสามารถแก้ไขความสนใจ</p>
-      <nuxt-link class="btn-link" to="/videoShow/วิทยาการคอม">
+      <nuxt-link class="btn-link" to="/videoShow/สาขาวิชาเกมและสื่อเชิงโต้ตอบ">
         <b-button>ดูสาขาที่เหมาะกับคุณ !</b-button>
       </nuxt-link>
     </div>
@@ -65,33 +65,28 @@ export default {
   components: {
     Header,
   },
-  data() {
-    return {
-      selected: 'first',
-      options: [
-        { text: 'เล่นวิดีโอเกม', value: 'first' },
-        { text: 'Second radio', value: 'second' },
-        { text: 'Third radio', value: 'third' },
-      ],
-    }
-  },
 }
 </script>
 <style scoped>
 * {
   font-family: 'Sukhumvit';
 }
+html,
+.body {
+  min-height: 100%;
+}
 span {
   margin-left: 10px;
   font-weight: 600;
   font-size: 20px;
 }
-.body {
+.bigContainer {
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   padding: 60px;
+  height: 100%;
 }
 .title {
   font-weight: bold;
@@ -112,7 +107,7 @@ span {
   background-color: #feb249;
   border-color: #feb249;
   width: 100%;
-  padding: 25px;
+  padding: 20px;
   font-family: 'Sukhumvit';
   font-size: 25px;
   border-radius: 10px;

@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="body">
     <Header />
-    <div class="body">
+    <div class="bigContainer">
       <p class="title">กิจกรรมค้นหาวิชาสาขาสำหรับคุณ</p>
       <p class="subtitle">
         โปรดเลือกสิ่งที่คุณสนใจ มีทักษะ หรือชื่นชอบ <br />
@@ -25,10 +25,14 @@ export default {
 }
 </script>
 <style scoped>
+html,
 .body {
+  min-height: 100%;
+}
+.bigContainer {
   justify-content: center;
   align-items: center;
-  padding: 200px;
+  padding: 100px;
   display: flex;
   flex-direction: column;
 }
@@ -49,13 +53,13 @@ p {
   background-color: #feb249;
   border-color: #feb249;
   width: 100%;
-  padding: 25px;
+  padding: 20px;
   font-family: 'Sukhumvit';
   font-size: 25px;
   border-radius: 10px;
   margin-top: 40px;
 }
 .btn-link {
-  width: 35%;
+  width: 30%;
 }
 </style>
