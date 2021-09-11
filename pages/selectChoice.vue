@@ -51,7 +51,7 @@
         </div>
       </div>
       <p class="note">หมายเหตุ : หลังจากนี้คุณยังคงสามารถแก้ไขความสนใจ</p>
-      <nuxt-link class="btn-link" to="/selectChoice">
+      <nuxt-link class="btn-link" to="/videoShow/วิทยาการคอม">
         <b-button>ดูสาขาที่เหมาะกับคุณ !</b-button>
       </nuxt-link>
     </div>
