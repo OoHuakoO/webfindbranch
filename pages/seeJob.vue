@@ -45,36 +45,55 @@ export default {
           titleDetail: 'Data Science',
           subtitleDetail:
             'สายงานที่ได้รับความนิยมสูงและขึ้นชื่อว่าเป็นสายงานที่คนต้องการเป็นมากที่สุดในโลกการวิเคราะข้อมูลเป้นศาสตร์ที่มีความสำคัญมากในโลกยุคใหม่การวิเคราะห์ข้อมูลเพื่อให้องค์กรและธุรกิจนำข้อมุลไปใช้ให้เกิดประโยชน์สูงสุด',
-          picture:
-            'https://cdn.dribbble.com/users/206362/screenshots/14453538/media/cfe80febeed64218b34e18f518ca9ae9.jpg?compress=1&resize=400x300',
+          picture: require('@/assets/Data Science.png'),
         },
         {
           titleDetail: 'Programmer & Developer',
           subtitleDetail:
             'ปัจจุบันภาคธุรกิจมีการเร่งพัฒนาระบบงานต่าง ๆ ไม่ว่าจะเป็นเว็บไซต์ และแอปพลิเคชันที่รองรับการใช้งานบนสมาร์ทดีไวซ์ทุกแพลตฟอร์ม เพื่อนำไปสู่การให้บริการและเข้าถึงกลุ่มลูกค้า รวมถึงการขยายตลาดใหม่ ๆ  สายงานนี้จึงเป็นส่วนขับเคลื่อนที่สำคัญ',
-          picture:
-            'https://cdn.dribbble.com/users/206362/screenshots/14453538/media/cfe80febeed64218b34e18f518ca9ae9.jpg?compress=1&resize=400x300',
+          picture: require('@/assets/Programmer & Developer.png'),
         },
         {
           titleDetail: 'Cyper Security',
           subtitleDetail:
             'สำหรับ Cyber Security เป็นอีกหนึ่งสายงานที่สำคัญและเป็นที่ต้องการสูงมากในยุคดิจิทัล เนื่องจากการเติบโตของจำนวนผู้ใช้งานในโลกอินเทอร์เน็ตมีจำนวนเพิ่มสูงขึ้นเรื่อย ๆ ทำให้ต้องมีการสร้างความมั่นใจในระบบต่าง ๆ ว่ามีความปลอดภัยและมีความเป็นส่วนตัวในการเข้าใช้งาน ไม่มีช่องโหว่ที่ก่อให้เกิดอันตรายต่อระบบการทำงานขององค์กร นอกจากนี้ยังรวมถึงด้านกฎหมายที่ Cyber Security จะต้องมีหน้าที่ในการดูแลด้วย เพื่อให้เป็นไปตามมาตรฐาน',
-          picture:
-            'https://cdn.dribbble.com/users/206362/screenshots/14453538/media/cfe80febeed64218b34e18f518ca9ae9.jpg?compress=1&resize=400x300',
+          picture: require('@/assets/Cyper Security.png'),
         },
         {
           titleDetail: 'IT Management',
           subtitleDetail:
             'การนำเทคโนโลยีมาประยุกต์ใช้และเสริมความแข็งแกร่งให้กับกระบวนการทางธุรกิจยังมีเพิ่มขึ้นอย่างต่อเนื่อง โดยนำเทคโนโลยีมาเพิ่มศักยภาพให้มีความเป็นอัติโนมัติยิ่งขึ้น ตลาดออฟไลน์มีการหันมาทำออนไลน์มากขึ้น ทำให้เกิดโจทย์ทางธุรกิจใหม่ ๆ ซึ่งต้องการกลุ่มสายงานลูกผสมที่มีความรู้ทางด้านธุรกิจควบคู่กับไอทีมาช่วยพัฒนาซอฟต์แวร์และระบบต่าง ๆ ในเชิงงานโครงการ จึงไม่น่าแปลกใจที่สายงานนี้ติดอันดับ',
-          picture:
-            'https://cdn.dribbble.com/users/206362/screenshots/14453538/media/cfe80febeed64218b34e18f518ca9ae9.jpg?compress=1&resize=400x300',
+          picture: require('@/assets/IT Management.png'),
         },
         {
           titleDetail: 'Database',
           subtitleDetail:
             'ระบบฐานข้อมูลถือเป็นหัวใจสำคัญในการรองรับและสนับสนุนการพัฒนาต่าง ๆ ส่งผลให้ระบบฐานข้อมูลมีความจำเป็นต้องมีบุคลากรผู้เชี่ยวชาญเข้ามาดูแล ทำให้ตำแหน่ง Database Administrator ยังเป็นที่ต้องการของตลาดอยู่เสมอ',
-          picture:
-            'https://cdn.dribbble.com/users/206362/screenshots/14453538/media/cfe80febeed64218b34e18f518ca9ae9.jpg?compress=1&resize=400x300',
+          picture: require('@/assets/Database.png'),
+        },
+        {
+          titleDetail: 'Network Administrator',
+          subtitleDetail:
+            'ระบบฐานข้อมูลถือเป็นหัวใจสำคัญในการรองรับและสนับสนุนการพัฒนาต่าง ๆ ส่งผลให้ระบบฐานข้อมูลมีความจำเป็นต้องมีบุคลากรผู้เชี่ยวชาญเข้ามาดูแล ทำให้ตำแหน่ง Database Administrator ยังเป็นที่ต้องการของตลาดอยู่เสมอ',
+          picture: require('@/assets/Network Administrator.png'),
+        },
+        {
+          titleDetail: 'Design Job',
+          subtitleDetail:
+            'หลักการดีไซน์เป็นหลักสากล การประกอบอาชีพหลายสาขาไม่ว่าจะเป็น Graphic Design/UX,UI/Web Design/Animation และอื่น ๆ อีกมากมายช่วยทำให้เข้าถึงลูกค้าหรือกลุ่มตลาดดียิ่งขึ้น เป็นสายอาชีพที่หลายคนใฝ่ฝันและความชอบของหลาย ๆ คน',
+          picture: require('@/assets/Design Job.png'),
+        },
+        {
+          titleDetail: 'E-Sport Event Organizer',
+          subtitleDetail:
+            'อุสาหกรรม E-Sport กำลังมาแรงเป็นและทั่วโลกต่างให้ความสนใจการจัดแข่งขัน E-sport เป็น E-vent ที่ทำให้หลายภาคของธุรกิจเติบโต เป็นสายงานที่คนรุ่นใหม่ไฝ่ฝัน',
+          picture: require('@/assets/E-Sport Event Organizer.png'),
+        },
+        {
+          titleDetail: 'IT Support',
+          subtitleDetail:
+            'ตำแหน่งงานที่มีหน้าที่ดูแลรับผิดชอบ จัดการ แก้ไข ซ่อมแซม บำรุงรักษาเครื่องใช้อุปกรณ์คอมพิวเตอร์ ตลอดจน Software และ Hardware ขององค์กรให้อยู่ในสภาพที่ดี และพร้อมใช้งานอยู่ตลอดเวลา',
+          picture: require('@/assets/IT Support.png'),
         },
       ],
     }

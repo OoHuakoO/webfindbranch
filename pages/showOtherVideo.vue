@@ -5,7 +5,7 @@
       <nuxt-link class="leftContainer" to="/seeJob">
         <div class="boxImage">
           <img
-            src="https://bahmansport.com/media/com_store/images/empty.png"
+           :src="require('@/assets/Data Science.png')"
             alt="Image"
             class="leftImg"
           />

@@ -6,7 +6,7 @@
       <div class="mt-4 boxCard">
         <b-card v-for="(item, index) in organizer" :key="index" class="card">
           <b-row no-gutters>
-            <b-col md="4">
+            <b-col md="3">
               <b-card-img
                 :src="item.picture"
                 alt="Image"
@@ -45,8 +45,7 @@ export default {
           branch: 'สาขาวิชา เทคโนโลยีสารสนเทศและนวัตรกรรม',
           university: 'มหาวิทยาลัยกรุงเทพ',
           email: 'E-mail : mingplagad@gmail.com',
-          picture:
-            'https://cdn.dribbble.com/users/206362/screenshots/14453538/media/cfe80febeed64218b34e18f518ca9ae9.jpg?compress=1&resize=400x300',
+          picture: require('@/assets/ming.png'),
         },
         {
           name: 'เธียรนรา อิทธิปาทานันท์',
@@ -54,8 +53,7 @@ export default {
           branch: 'สาขาวิชา เทคโนโลยีสารสนเทศและนวัตรกรรม',
           university: 'มหาวิทยาลัยกรุงเทพ',
           email: 'E-mail : ihqharain@gmail.com',
-          picture:
-            'https://cdn.dribbble.com/users/206362/screenshots/14453538/media/cfe80febeed64218b34e18f518ca9ae9.jpg?compress=1&resize=400x300',
+          picture: require('@/assets/tien.png'),
         },
       ],
     }
@@ -71,9 +69,9 @@ html,
   min-height: 100%;
 }
 .rightBox {
-  font-size: 1.5vw;
+  font-size: 1.7vw;
   padding: 1px;
-  margin-left: 3%;
+  margin-left: 5%;
   margin-top: 2%;
   width: 100%;
 }
@@ -92,7 +90,7 @@ html,
 }
 span.name {
   color: #feb249;
-  font-size: 1.7vw;
+  font-size: 1.9vw;
 }
 .title {
   font-weight: bold;
