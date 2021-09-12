@@ -15,7 +15,7 @@
             </b-col>
             <b-col md="8">
               <b-card-text class="rightBox">
-                <span> {{ item.name }}</span> <br />
+                <span class="name"> {{ item.name }}</span> <br />
                 <span>{{ item.faculty }} </span> <br />
                 <span>{{ item.branch }}</span> <br />
                 <span>{{ item.university }}</span> <br />
@@ -90,6 +90,10 @@ html,
   display: flex;
   flex-direction: column;
 }
+span.name {
+  color: #feb249;
+  font-size: 1.7vw;
+}
 .title {
   font-weight: bold;
   font-size: 3.2vw;
@@ -107,8 +111,14 @@ html,
   .rightBox {
     font-size: 2.5vw;
   }
+  span.name {
+    font-size: 2.7vw;
+  }
   .boxCard {
     width: 95%;
+  }
+  .card {
+    margin-bottom: 5%;
   }
 }
 @media screen and (max-width: 716px) {
@@ -119,14 +129,20 @@ html,
     margin-top: 5%;
   }
   .bigContainer {
-    padding: 40px;
+    padding: 20px;
     margin-top: 3vh;
   }
   .rightBox {
     font-size: 4vw;
   }
+  span.name {
+    font-size: 4.2vw;
+  }
   .boxCard {
     width: 80%;
+  }
+  .card {
+    margin-bottom: 10%;
   }
 }
 </style>
