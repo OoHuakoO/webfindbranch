@@ -134,15 +134,18 @@ p {
   .video {
     width: 90%;
   }
-   p {
+  p {
     font-size: 4vw;
   }
-   .underContainer {
+  .underContainer {
     width: 40%;
   }
-   .btn-secondary {
+  .btn-secondary {
     padding: 1.5vw;
     font-size: 4vw;
+  }
+  .btn-link-branch {
+    width: 40%;
   }
 }
 @media screen and (max-width: 414px) {

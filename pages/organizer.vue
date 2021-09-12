@@ -96,4 +96,37 @@ html,
   text-align: center;
   color: #53d3d1;
 }
+@media screen and (max-width: 1150px) {
+  .title {
+    font-size: 5vw;
+  }
+  .bigContainer {
+    padding: 40px;
+    margin-top: 8vh;
+  }
+  .rightBox {
+    font-size: 2.5vw;
+  }
+  .boxCard {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 716px) {
+  .title {
+    font-size: 6vw;
+  }
+  .rightBox {
+    margin-top: 5%;
+  }
+  .bigContainer {
+    padding: 40px;
+    margin-top: 3vh;
+  }
+  .rightBox {
+    font-size: 4vw;
+  }
+  .boxCard {
+    width: 80%;
+  }
+}
 </style>

@@ -28,6 +28,16 @@ img {
   width: 2vw;
   margin-bottom: 2%;
 }
+@media screen and (max-width: 1150px) {
+  .navbar-dark .navbar-nav .nav-link {
+    font-size: 3vw;
+  }
+  img {
+    margin-right: 0.5vw;
+    width: 3vw;
+    margin-bottom: 2%;
+  }
+}
 @media screen and (max-width: 716px) {
   .navbar-dark .navbar-nav .nav-link {
     font-size: 4vw;
