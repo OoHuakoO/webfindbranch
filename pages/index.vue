@@ -2,6 +2,7 @@
   <div class="body">
     <Header />
     <div class="bigContainer">
+      <b-img src="~assets/banner.svg" fluld />
       <p class="title">กิจกรรมค้นหาวิชาสาขาสำหรับคุณ</p>
       <p class="subtitle">
         โปรดเลือกสิ่งที่คุณสนใจ มีทักษะ หรือชื่นชอบ <br />
@@ -32,7 +33,7 @@ html,
 .bigContainer {
   justify-content: center;
   align-items: center;
-  padding: 100px;
+  padding: 10vw;
   display: flex;
   flex-direction: column;
 }
@@ -41,25 +42,45 @@ p {
 }
 .title {
   font-weight: bold;
-  font-size: 4vw;
+  font-size: 5vw;
   text-align: center;
 }
 .subtitle {
   text-align: center;
   font-weight: 300;
-  font-size: 2.6vw;
+  font-size: 3vw;
 }
 .btn-secondary {
   background-color: #feb249;
   border-color: #feb249;
   width: 100%;
-  padding:1vw;
+  padding: 1vw;
   font-family: 'Sukhumvit';
-  font-size: 1.8vw;
+  font-size: 2vw;
   border-radius: 10px;
-  margin-top: 40px;
+  margin-top: 5%;
 }
 .btn-link {
   width: 30%;
+}
+
+@media screen and (min-width: 717px) {
+  img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) {
+}
+@media screen and (max-width: 716px) {
+  img {
+    width: 100%;
+  }
+  .bigContainer {
+    padding: 8vw;
+  }
+}
+@media screen and (max-width: 414px) {
+}
+@media screen and (max-width: 320px) {
 }
 </style>

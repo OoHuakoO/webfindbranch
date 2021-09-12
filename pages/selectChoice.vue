@@ -123,7 +123,7 @@ span {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 60px;
+  padding: 5vw;
   height: 100%;
 }
 .title {
@@ -145,7 +145,7 @@ span {
   background-color: #feb249;
   border-color: #feb249;
   width: 100%;
-  padding:1vw;
+  padding: 1vw;
   font-family: 'Sukhumvit';
   font-size: 1.8vw;
   border-radius: 10px;
@@ -200,5 +200,14 @@ span {
 }
 .btn-link {
   width: 30%;
+}
+@media screen and (max-width: 1150px) {
+
+}
+@media screen and (max-width: 716px) {
+}
+@media screen and (max-width: 414px) {
+}
+@media screen and (max-width: 320px) {
 }
 </style>
