@@ -227,7 +227,10 @@ span {
   }
   .btn-secondary {
     padding: 1.5vw;
-    font-size: 2vw;
+    font-size: 3vw;
+  }
+  .btn-link {
+    width: 40%;
   }
 }
 @media screen and (max-width: 716px) {
@@ -236,15 +239,21 @@ span {
     margin-top: 12vh;
   }
   .flexButton {
-    width: 65%;
-    margin-top: 20px;
+    width: 70%;
+    margin-top: 15px;
+  }
+  .title {
+    font-size: 7vw;
+  }
+  .subtitle {
+    font-size: 5vw;
   }
   span {
     margin-left: 10px;
-    font-size: 2.5vw;
+    font-size: 3vw;
   }
   .note {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 3vw;
   }
   .nonActiveRadio {
@@ -272,25 +281,34 @@ span {
 }
 @media screen and (max-width: 414px) {
   .flexButton {
-    width: 70%;
+    width: 80%;
     margin-top: 20px;
   }
   .activeRadio {
     padding: 4px;
   }
   .activeRadio {
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
   }
   .nonActiveRadio {
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
   }
   .nonActiveRadio:hover {
-    width: 13px;
-    height: 13px;
+    width: 15px;
+    height: 15px;
   }
-}
-@media screen and (max-width: 320px) {
+  .btn-secondary {
+    padding: 2vw;
+    font-size: 4vw;
+  }
+  .btn-link {
+    width: 50%;
+  }
+  .note {
+    margin-top: 15px;
+    font-size: 3.2vw;
+  }
 }
 </style>

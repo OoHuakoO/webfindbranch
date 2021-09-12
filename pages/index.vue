@@ -16,10 +16,8 @@
     </div>
   </div>
 </template>
-
 <script>
 import Header from '@/components/header'
-
 export default {
   components: {
     Header,
@@ -27,6 +25,9 @@ export default {
 }
 </script>
 <style scoped>
+* {
+  font-family: 'Sukhumvit';
+}
 html,
 .body {
   min-height: 100%;
@@ -37,9 +38,6 @@ html,
   padding: 10vw;
   display: flex;
   flex-direction: column;
-}
-p {
-  font-family: 'Sukhumvit';
 }
 .title {
   font-weight: bold;
@@ -56,7 +54,6 @@ p {
   border-color: #feb249;
   width: 100%;
   padding: 1vw;
-  font-family: 'Sukhumvit';
   font-size: 2vw;
   border-radius: 10px;
   margin-top: 5%;
@@ -64,7 +61,6 @@ p {
 .btn-link {
   width: 30%;
 }
-
 @media screen and (min-width: 717px) {
   img {
     display: none;
@@ -96,8 +92,14 @@ p {
     margin-top: 5vh;
   }
   .btn-secondary {
-    font-size: 3vw;
+    font-size: 4vw;
     padding: 2vw;
+  }
+  .subtitle {
+    font-size: 4vw;
+  }
+  .btn-link {
+    width:50%;
   }
 }
 </style>

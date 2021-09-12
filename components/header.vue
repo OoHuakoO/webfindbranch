@@ -30,11 +30,11 @@ img {
 }
 @media screen and (max-width: 716px) {
   .navbar-dark .navbar-nav .nav-link {
-    font-size: 3vw;
+    font-size: 4vw;
   }
   img {
     margin-right: 0.5vw;
-    width: 3vw;
+    width: 4vw;
     margin-bottom: 2%;
   }
 }

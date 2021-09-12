@@ -2,14 +2,7 @@
   <div class="body">
     <Header />
     <div class="bigContainer">
-      <video
-        width="60%"
-        controls="controls"
-        id="myVideo"
-        @play="playVideo"
-        @pause="pauseVideo"
-        @ended="endedVideo"
-      >
+      <video class="video" controls="controls" @ended="endedVideo">
         <source :src="require('@/assets/testVideo.mp4')" type="video/mp4" />
       </video>
       <nuxt-link
@@ -52,12 +45,6 @@ export default {
     }
   },
   methods: {
-    playVideo() {
-      console.log('PLAY')
-    },
-    pauseVideo() {
-      console.log('PAUSE')
-    },
     endedVideo() {
       this.endedVideoState = true
     },
@@ -75,6 +62,9 @@ html,
 p {
   font-weight: bold;
   font-size: 1.8vw;
+}
+.video {
+  width: 60%;
 }
 .yellowText {
   color: #feb249;
@@ -116,5 +106,47 @@ p {
 .btn-link-branch {
   width: 30%;
   margin-top: 5%;
+}
+@media screen and (max-width: 1150px) {
+  .bigContainer {
+    padding: 0vw;
+    margin-top: 12vh;
+  }
+  .btn-secondary {
+    padding: 1.5vw;
+    font-size: 3vw;
+  }
+  .video {
+    width: 80%;
+  }
+  p {
+    font-size: 3vw;
+  }
+  .container {
+    width: 70%;
+    margin-top: 5%;
+  }
+  .underContainer {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 716px) {
+  .video {
+    width: 90%;
+  }
+   p {
+    font-size: 4vw;
+  }
+   .underContainer {
+    width: 40%;
+  }
+   .btn-secondary {
+    padding: 1.5vw;
+    font-size: 4vw;
+  }
+}
+@media screen and (max-width: 414px) {
+}
+@media screen and (max-width: 320px) {
 }
 </style>
