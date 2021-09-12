@@ -15,7 +15,7 @@
             </b-col>
             <b-col md="8">
               <b-card-text class="rightBox">
-                <p class="titleDetail">{{ item.titleDetail }}</p>
+                <span class="titleDetail">{{ item.titleDetail }}</span>
                 <p class="subtitleDetail">
                   {{ item.subtitleDetail }}
                 </p>
@@ -93,6 +93,7 @@ html,
   padding: 1vw;
   width: 100%;
   height: 100%;
+  margin-left: 2%;
 }
 .card {
   margin-bottom: 3%;
@@ -120,18 +121,63 @@ html,
 }
 .subtitleDetail {
   font-size: 1vw;
+  margin-top: 2%;
 }
 .btn-secondary {
   background-color: #feb249;
   border-color: #feb249;
   width: 100%;
   padding: 1vw;
-  font-family: 'Sukhumvit';
   font-size: 1.8vw;
   border-radius: 10px;
   margin-top: 40px;
 }
 .btn-link {
   width: 30%;
+}
+@media screen and (max-width: 1150px) {
+  .title {
+    font-size: 4vw;
+  }
+  .boxCard {
+    width: 95%;
+  }
+  .titleDetail {
+    font-size: 2.5vw;
+  }
+  .subtitleDetail {
+    font-size: 1.4vw;
+  }
+  .btn-secondary {
+    padding: 1.5vw;
+    font-size: 3vw;
+  }
+  .btn-link {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 716px) {
+  .boxCard {
+    width: 80%;
+  }
+  .titleDetail {
+    font-size: 4vw;
+  }
+  .subtitleDetail {
+    font-size: 3vw;
+  }
+  .rightBox {
+    padding: 0px;
+    margin-top: 5%;
+  }
+  .btn-secondary {
+    padding: 1.5vw;
+    font-size: 4vw;
+    margin-top: 16px;
+  }
+  .title {
+    margin-bottom: 0%;
+    margin-top: 5%;
+  }
 }
 </style>

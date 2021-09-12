@@ -6,7 +6,7 @@
         <div class="boxImage">
           <img
             src="https://bahmansport.com/media/com_store/images/empty.png"
-            alt="Paris"
+            alt="Image"
             class="leftImg"
           />
         </div>
@@ -86,6 +86,7 @@ html,
 .leftImg {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 .rightImg {
   width: 40%;
@@ -126,7 +127,7 @@ html,
   color: #feb249;
 }
 .boxImage {
-  padding: 1vw;
+  padding: 2vw;
   background-color: #53d3d1;
   border-radius: 20px;
   cursor: pointer;
@@ -147,5 +148,54 @@ html,
   width: 25%;
   margin-bottom: 4%;
   margin-left: 7%;
+}
+@media screen and (max-width: 1150px) {
+  .bigContainer {
+    padding: 8vh 10vw 1vh 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .leftContainer {
+    width: 80%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+  .rightContainer {
+    width: 90%;
+    margin-top: 4%;
+  }
+  .jobAfterLearn {
+    font-size: 3.5vw;
+    margin-top: 10%;
+  }
+  .textSeeVideo {
+    font-size: 3.5vw;
+    margin-bottom: 6%;
+  }
+  .rightImg {
+    width: 45%;
+    border-radius: 10px;
+  }
+  .boxTextVideo {
+    font-size: 3.5vw;
+    margin-left: 5%;
+    padding: 10px;
+  }
+  .btn-secondary {
+    padding: 1.5vw;
+    font-size: 3vw;
+  }
+  .underContainer {
+    width: 40%;
+    margin-bottom: 10%;
+  }
+}
+@media screen and (max-width: 716px) {
+  .btn-secondary {
+    font-size: 4vw;
+  }
 }
 </style>
