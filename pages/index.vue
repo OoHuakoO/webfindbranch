@@ -1,6 +1,7 @@
 <template>
   <div class="body">
     <Header />
+
     <div class="bigContainer">
       <b-img src="~assets/banner.svg" fluld />
       <p class="title">กิจกรรมค้นหาวิชาสาขาสำหรับคุณ</p>
@@ -70,6 +71,21 @@ p {
   }
 }
 @media screen and (max-width: 1150px) {
+  .bigContainer {
+    margin-top: 30%;
+  }
+  .title {
+    font-size: 5.5vw;
+  }
+  .subtitle {
+    font-size: 3.5vw;
+  }
+  .btn-secondary {
+    font-size: 3vw;
+  }
+  .btn-link {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 716px) {
   img {
@@ -77,10 +93,11 @@ p {
   }
   .bigContainer {
     padding: 8vw;
+    margin-top: 5vh;
   }
-}
-@media screen and (max-width: 414px) {
-}
-@media screen and (max-width: 320px) {
+  .btn-secondary {
+    font-size: 3vw;
+    padding: 2vw;
+  }
 }
 </style>

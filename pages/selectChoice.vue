@@ -146,7 +146,6 @@ span {
   border-color: #feb249;
   width: 100%;
   padding: 1vw;
-  font-family: 'Sukhumvit';
   font-size: 1.8vw;
   border-radius: 10px;
   margin-top: 3vh;
@@ -158,24 +157,27 @@ span {
   border-radius: 200px;
 }
 .activeRadio {
-  width: 2.6vw;
-  height: 2.6vw;
+  width: 30px;
+  height: 30px;
   background-color: #feb249;
   border-radius: 200px;
   cursor: pointer;
-  padding: 0.6vw;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .nonActiveRadio {
-  width: 2.6vw;
-  height: 2.6vw;
+  width: 30px;
+  height: 30px;
   background-color: #ffffff;
   border-radius: 200px;
   border: solid 2px #696880;
   cursor: pointer;
 }
 .nonActiveRadio:hover {
-  width: 2.6vw;
-  height: 2.6vw;
+  width: 30px;
+  height: 30px;
   background-color: #ffffff;
   border-radius: 200px;
   border: solid 2px #feb249;
@@ -202,11 +204,92 @@ span {
   width: 30%;
 }
 @media screen and (max-width: 1150px) {
-
+  .bigContainer {
+    padding: 5vw;
+    margin-top: 10vh;
+  }
+  .title {
+    font-size: 5vw;
+  }
+  .subtitle {
+    font-size: 4vw;
+  }
+  .flexButton {
+    width: 60%;
+  }
+  span {
+    margin-left: 10px;
+    font-size: 2vw;
+  }
+  .note {
+    margin-top: 30px;
+    font-size: 2.5vw;
+  }
+  .btn-secondary {
+    padding: 1.5vw;
+    font-size: 2vw;
+  }
 }
 @media screen and (max-width: 716px) {
+  .bigContainer {
+    padding: 4vw;
+    margin-top: 12vh;
+  }
+  .flexButton {
+    width: 65%;
+    margin-top: 20px;
+  }
+  span {
+    margin-left: 10px;
+    font-size: 2.5vw;
+  }
+  .note {
+    margin-top: 20px;
+    font-size: 3vw;
+  }
+  .nonActiveRadio {
+    width: 20px;
+    height: 20px;
+    border: solid 1px #696880;
+  }
+  .nonActiveRadio:hover {
+    width: 20px;
+    height: 20px;
+    border: solid 1px #feb249;
+  }
+  .activeRadio {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+  }
+  .btn-secondary {
+    padding: 2vw;
+    font-size: 3vw;
+  }
+  .btn-link {
+    width: 40%;
+  }
 }
 @media screen and (max-width: 414px) {
+  .flexButton {
+    width: 70%;
+    margin-top: 20px;
+  }
+  .activeRadio {
+    padding: 4px;
+  }
+  .activeRadio {
+    width: 13px;
+    height: 13px;
+  }
+  .nonActiveRadio {
+    width: 13px;
+    height: 13px;
+  }
+  .nonActiveRadio:hover {
+    width: 13px;
+    height: 13px;
+  }
 }
 @media screen and (max-width: 320px) {
 }
