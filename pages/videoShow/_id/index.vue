@@ -8,9 +8,17 @@
         id="myVideo"
         @play="playVideo"
         @pause="pauseVideo"
+        @ended="endedVideo"
       >
         <source :src="require('@/assets/testVideo.mp4')" type="video/mp4" />
       </video>
+      <nuxt-link
+        v-if="endedVideoState"
+        class="btn-link-branch"
+        to="/showOtherVideo"
+      >
+        <b-button>ดูอาชีพเกี่ยวกับสาขา</b-button>
+      </nuxt-link>
       <div class="container">
         <p>สาขาวิชาเกมและสื่อเชิงโต้ตอบ</p>
         <p class="yellowText">คือสาขาวิชาที่เหมาะกับคุณ</p>
@@ -38,12 +46,20 @@ export default {
     Header,
     VideoPlayer,
   },
+  data() {
+    return {
+      endedVideoState: false,
+    }
+  },
   methods: {
     playVideo() {
       console.log('PLAY')
     },
     pauseVideo() {
       console.log('PAUSE')
+    },
+    endedVideo() {
+      this.endedVideoState = true
     },
   },
 }
@@ -90,12 +106,15 @@ p {
   background-color: #feb249;
   border-color: #feb249;
   width: 100%;
-  padding:1vw;
-  font-family: 'Sukhumvit';
+  padding: 1vw;
   font-size: 1.8vw;
   border-radius: 10px;
 }
 .btn-link {
   width: 100%;
+}
+.btn-link-branch {
+  width: 30%;
+  margin-top: 5%;
 }
 </style>

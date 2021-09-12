@@ -2,65 +2,66 @@
   <div class="body">
     <Header />
     <div class="bigContainer">
-      <p class="title">สาขาอาชีพที่สามารถนำไปต่อยอดในอนาคต</p>
-      <div class="mt-4 boxCard">
-        <b-card class="card">
-          <b-row no-gutters>
-            <b-col md="4">
-              <b-card-img
-                src="https://cdn.dribbble.com/users/206362/screenshots/14453538/media/cfe80febeed64218b34e18f518ca9ae9.jpg?compress=1&resize=400x300"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-            <b-col md="6">
-              <b-card-text class="rightBox">
-                <p class="titleDetail">Data Science</p>
-                <p class="subtitleDetail">
-                  สายงานที่ได้รับความนิยมสูง
-                  และขึ้นชื่อว่าเป็นสายงานที่คนต้องการเป็นมากที่สุดในโลก
-                  การวิเคราะข้อมูลเป้นศาสตร์ที่มีความสำคัญมากในโลกยุคใหม่
-                  การวิเคราะห์ข้อมูลเพื่อให้องค์กรและธุรกิจนำข้อมุลไปใช้ให้เกิดประโยชน์สูงสุด
-                </p>
-              </b-card-text>
-            </b-col>
-          </b-row>
-        </b-card>
-
-        <b-card class="card">
-          <b-row no-gutters>
-            <b-col md="4">
-              <b-card-img
-                src="https://cdn.dribbble.com/users/206362/screenshots/14453538/media/cfe80febeed64218b34e18f518ca9ae9.jpg?compress=1&resize=400x300"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-            <b-col md="6">
-              <b-card-text class="rightBox">
-                <p class="titleDetail">Programmer & Developer</p>
-                <p class="subtitleDetail">
-                  ปัจจุบันภาคธุรกิจมีการเร่งพัฒนาระบบงานต่าง ๆ
-                  ไม่ว่าจะเป็นเว็บไซต์
-                  และแอปพลิเคชันที่รองรับการใช้งานบนสมาร์ทดีไวซ์ทุกแพลตฟอร์ม
-                  เพื่อนำไปสู่การให้บริการและเข้าถึงกลุ่มลูกค้า
-                  รวมถึงการขยายตลาดใหม่ ๆ สายงานนี้จึงเป็นส่วนขับเคลื่อนที่สำคัญ
-                </p>
-              </b-card-text>
-            </b-col>
-          </b-row>
-        </b-card>
+      <nuxt-link class="leftContainer" to="/seeJob">
+        <div class="boxImage">
+          <img
+            src="https://bahmansport.com/media/com_store/images/empty.png"
+            alt="Paris"
+            class="leftImg"
+          />
+        </div>
+        <p class="jobAfterLearn">อาชีพหลังจบการอาชีพหลังจบการศึกษา</p>
+      </nuxt-link>
+      <div class="rightContainer">
+        <p class="textSeeVideo">ดูวีดีโอสาขาอื่นๆ</p>
+        <nuxt-link
+          v-for="(item, index) in itemOtherVideo"
+          :key="index"
+          class="rowVideo"
+          :to="`/videoShow/${item.name}`"
+        >
+          <img :src="item.picture" alt="Image" class="rightImg" />
+          <div class="boxTextVideo">
+            <span>{{ item.name }}</span>
+          </div>
+        </nuxt-link>
       </div>
+    </div>
+    <div class="underContainer">
+      <nuxt-link class="btn-link" to="/selectChoice">
+        <b-button>แก้ไขความสนใจ</b-button>
+      </nuxt-link>
     </div>
   </div>
 </template>
 
 <script>
 import Header from '@/components/header'
-
 export default {
   components: {
     Header,
+  },
+  data() {
+    return {
+      itemOtherVideo: [
+        {
+          name: 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ',
+          picture: 'https://bahmansport.com/media/com_store/images/empty.png',
+        },
+        {
+          name: 'สาขาวิชาวิทยาการคอมพิวเตอร์',
+          picture: 'https://bahmansport.com/media/com_store/images/empty.png',
+        },
+        {
+          name: 'สาขาวิชาเทคโนโลยีสารสนเทศ',
+          picture: 'https://bahmansport.com/media/com_store/images/empty.png',
+        },
+        {
+          name: 'สาขาวิชาวิทยาการคอมพิวเตอร์ความปลอดภัยทางไซเบอร์',
+          picture: 'https://bahmansport.com/media/com_store/images/empty.png',
+        },
+      ],
+    }
   },
 }
 </script>
@@ -72,53 +73,79 @@ html,
 .body {
   min-height: 100%;
 }
-.rightBox {
-  padding: 1px;
-  margin-left: 5%;
-  margin-top: 2%;
+.textSeeVideo {
+  font-size: 2vw;
 }
-.card {
-  margin-bottom: 3%;
+.rowVideo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5%;
+  text-decoration: none;
 }
-.boxCard {
-  width: 75%;
+.leftImg {
+  width: 100%;
+  height: 100%;
+}
+.rightImg {
+  width: 40%;
+  border-radius: 10px;
+}
+.jobAfterLearn {
+  font-size: 2vw;
+  font-weight: 600;
+  margin-top: 5%;
+  color: #101010;
 }
 .bigContainer {
-  justify-content: center;
+  padding: 8vh 10vw 1vh 10vw;
+  display: flex;
+  flex-direction: row;
+}
+.leftContainer {
+  width: 60%;
   align-items: center;
-  padding: 80px;
   display: flex;
   flex-direction: column;
+  text-decoration: none;
 }
-.title {
-  font-weight: bold;
-  font-size: 40px;
+.rightContainer {
+  width: 40%;
+  margin-left: 5%;
+}
+.boxTextVideo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 60%;
+  font-size: 1.5vw;
+  margin-left: 5%;
   text-align: center;
+  border-left: solid 2px #feb249;
+  padding: 10px;
   color: #feb249;
 }
-.subtitle {
-  text-align: center;
-  font-weight: 300;
-  font-size: 30px;
-}
-.titleDetail {
-  font-size: 25px;
-  color: #feb249;
-}
-.subtitleDetail {
-  font-size: 16px;
+.boxImage {
+  padding: 1vw;
+  background-color: #53d3d1;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 100%;
 }
 .btn-secondary {
   background-color: #feb249;
   border-color: #feb249;
   width: 100%;
-  padding: 20px;
-  font-family: 'Sukhumvit';
-  font-size: 25px;
+  padding: 1vw;
+  font-size: 1.8vw;
   border-radius: 10px;
-  margin-top: 40px;
 }
 .btn-link {
-  width: 30%;
+  width: 100%;
+}
+.underContainer {
+  width: 25%;
+  margin-bottom: 4%;
+  margin-left: 7%;
 }
 </style>
