@@ -35,7 +35,7 @@ html,
 .bigContainer {
   justify-content: center;
   align-items: center;
-  padding: 10vw;
+  padding: 90px;
   display: flex;
   flex-direction: column;
 }
