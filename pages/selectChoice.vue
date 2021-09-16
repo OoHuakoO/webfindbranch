@@ -39,7 +39,7 @@
         </div>
       </div>
       <p class="note">หมายเหตุ : หลังจากนี้คุณยังคงสามารถแก้ไขความสนใจ</p>
-      <nuxt-link class="btn-link" to="/videoShow/สาขาวิชาเกมและสื่อเชิงโต้ตอบ">
+      <nuxt-link class="btn-link" to="/selectBranch/สาขาวิชาเกมและสื่อเชิงโต้ตอบ">
         <b-button>ดูสาขาที่เหมาะกับคุณ !</b-button>
       </nuxt-link>
     </div>

@@ -5,27 +5,6 @@
       <video class="video" controls="controls" @ended="endedVideo">
         <source :src="require('@/assets/testVideo.mp4')" type="video/mp4" />
       </video>
-      <nuxt-link
-        v-if="endedVideoState"
-        class="btn-link-branch"
-        to="/showOtherVideo"
-      >
-        <b-button>ดูอาชีพเกี่ยวกับสาขา</b-button>
-      </nuxt-link>
-      <div class="container">
-        <p>สาขาวิชาเกมและสื่อเชิงโต้ตอบ</p>
-        <p class="yellowText">คือสาขาวิชาที่เหมาะกับคุณ</p>
-        <div>
-          <p class="textPromote">
-            รับชมวิดีโอเพื่อทำความรู้จักกับ สิ่งที่น่าสนใจของสาขาวิชาได้เลย !
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="underContainer">
-      <nuxt-link class="btn-link" to="/selectChoice">
-        <b-button>แก้ไขความสนใจ</b-button>
-      </nuxt-link>
     </div>
   </div>
 </template>
@@ -46,7 +25,9 @@ export default {
   },
   methods: {
     endedVideo() {
-      this.endedVideoState = true
+      this.$router.push({
+        path: '/showOtherVideo',
+      })
     },
   },
 }
@@ -64,18 +45,13 @@ p {
   font-size: 1.8vw;
 }
 .video {
-  width: 60%;
+  width: 70%;
 }
 .yellowText {
   color: #feb249;
 }
 .textPromote {
   text-align: center;
-}
-.underContainer {
-  width: 25%;
-  margin-bottom: 4%;
-  margin-left: 7%;
 }
 .container {
   display: flex;
@@ -92,30 +68,12 @@ p {
   display: flex;
   flex-direction: column;
 }
-.btn-secondary {
-  background-color: #feb249;
-  border-color: #feb249;
-  width: 100%;
-  padding: 1vw;
-  font-size: 1.8vw;
-  border-radius: 10px;
-}
-.btn-link {
-  width: 100%;
-}
-.btn-link-branch {
-  width: 30%;
-  margin-top: 5%;
-}
 @media screen and (max-width: 1150px) {
   .bigContainer {
     padding: 0vw;
-    margin-top: 12vh;
+    margin-top: 25vh;
   }
-  .btn-secondary {
-    padding: 1.5vw;
-    font-size: 3vw;
-  }
+
   .video {
     width: 80%;
   }
@@ -126,9 +84,6 @@ p {
     width: 70%;
     margin-top: 5%;
   }
-  .underContainer {
-    width: 30%;
-  }
 }
 @media screen and (max-width: 716px) {
   .video {
@@ -137,19 +92,5 @@ p {
   p {
     font-size: 4vw;
   }
-  .underContainer {
-    width: 40%;
-  }
-  .btn-secondary {
-    padding: 1.5vw;
-    font-size: 4vw;
-  }
-  .btn-link-branch {
-    width: 40%;
-  }
-}
-@media screen and (max-width: 414px) {
-}
-@media screen and (max-width: 320px) {
 }
 </style>

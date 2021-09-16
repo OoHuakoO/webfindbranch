@@ -4,7 +4,53 @@
     <div class="bigContainer">
       <p class="title">สาขาอาชีพที่สามารถนำไปต่อยอดในอนาคต</p>
       <div class="mt-4 boxCard">
-        <b-card v-for="(item, index) in job" :key="index" class="card">
+        <b-card
+          v-for="(item, index) in job"
+          :key="index"
+          class="cardResponsiveCom"
+        >
+          <b-row v-if="(index + 1) % 2 != 0" no-gutters>
+            <b-col md="4">
+              <b-card-img
+                :src="item.picture"
+                alt="Image"
+                class="rounded-1"
+              ></b-card-img>
+            </b-col>
+            <b-col md="8">
+              <b-card-text class="rightBox">
+                <span class="titleDetail">{{ item.titleDetail }}</span>
+                <p class="subtitleDetail">
+                  {{ item.subtitleDetail }}
+                </p>
+              </b-card-text>
+            </b-col>
+          </b-row>
+
+          <b-row v-if="(index + 1) % 2 == 0" no-gutters>
+            <b-col md="8">
+              <b-card-text class="leftBox">
+                <span class="titleDetail">{{ item.titleDetail }}</span>
+                <p class="subtitleDetail">
+                  {{ item.subtitleDetail }}
+                </p>
+              </b-card-text>
+            </b-col>
+            <b-col md="4">
+              <b-card-img
+                :src="item.picture"
+                alt="Image"
+                class="rounded-1"
+              ></b-card-img>
+            </b-col>
+          </b-row>
+        </b-card>
+
+        <b-card
+          v-for="(item, index) in job"
+          :key="index"
+          class="cardResponsiveMobile"
+        >
           <b-row no-gutters>
             <b-col md="4">
               <b-card-img
@@ -24,9 +70,6 @@
           </b-row>
         </b-card>
       </div>
-      <nuxt-link class="btn-link" to="/selectChoice">
-        <b-button>แก้ไขความสนใจ</b-button>
-      </nuxt-link>
     </div>
   </div>
 </template>
@@ -114,7 +157,12 @@ html,
   height: 100%;
   margin-left: 2%;
 }
-.card {
+.leftBox {
+  padding: 1vw;
+  width: 100%;
+  height: 100%;
+}
+.cardResponsiveCom {
   margin-bottom: 3%;
 }
 .boxCard {
@@ -154,6 +202,7 @@ html,
 .btn-link {
   width: 30%;
 }
+
 @media screen and (max-width: 1150px) {
   .title {
     font-size: 4vw;
@@ -175,7 +224,18 @@ html,
     width: 40%;
   }
 }
+@media screen and (min-width: 717px) {
+  .cardResponsiveMobile {
+    display: none;
+  }
+}
 @media screen and (max-width: 716px) {
+  .cardResponsiveCom {
+    display: none;
+  }
+  .cardResponsiveMobile {
+    margin-bottom: 3%;
+  }
   .boxCard {
     width: 80%;
   }

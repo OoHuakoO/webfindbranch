@@ -5,7 +5,7 @@
       <nuxt-link class="leftContainer" to="/seeJob">
         <div class="boxImage">
           <img
-           :src="require('@/assets/Data Science.png')"
+            :src="require('@/assets/Data Science.png')"
             alt="Image"
             class="leftImg"
           />
@@ -26,11 +26,6 @@
           </div>
         </nuxt-link>
       </div>
-    </div>
-    <div class="underContainer">
-      <nuxt-link class="btn-link" to="/selectChoice">
-        <b-button>แก้ไขความสนใจ</b-button>
-      </nuxt-link>
     </div>
   </div>
 </template>
@@ -95,20 +90,23 @@ html,
 .jobAfterLearn {
   font-size: 2vw;
   font-weight: 600;
-  margin-top: 5%;
-  color: #101010;
+  margin-top: 6%;
+  color: #ffffff;
 }
 .bigContainer {
-  padding: 8vh 10vw 1vh 10vw;
+  padding: 8vh 5vw 1vh 8vw;
   display: flex;
   flex-direction: row;
 }
 .leftContainer {
-  width: 60%;
+  width: 90%;
   align-items: center;
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  padding: 2vw;
+  background-color: #feb249;
+  border-radius: 20px;
 }
 .rightContainer {
   width: 40%;
@@ -119,7 +117,7 @@ html,
   align-items: center;
   display: flex;
   width: 60%;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   margin-left: 5%;
   text-align: center;
   border-left: solid 2px #feb249;
@@ -127,27 +125,13 @@ html,
   color: #feb249;
 }
 .boxImage {
-  padding: 2vw;
-  background-color: #53d3d1;
   border-radius: 20px;
   cursor: pointer;
   width: 100%;
 }
-.btn-secondary {
-  background-color: #feb249;
-  border-color: #feb249;
-  width: 100%;
-  padding: 1vw;
-  font-size: 1.8vw;
-  border-radius: 10px;
-}
+
 .btn-link {
   width: 100%;
-}
-.underContainer {
-  width: 25%;
-  margin-bottom: 4%;
-  margin-left: 7%;
 }
 @media screen and (max-width: 1150px) {
   .bigContainer {
@@ -157,7 +141,7 @@ html,
     align-items: center;
   }
   .leftContainer {
-    width: 80%;
+    width: 90%;
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -169,11 +153,12 @@ html,
   }
   .jobAfterLearn {
     font-size: 3.5vw;
-    margin-top: 10%;
+    margin-top: 6%;
   }
   .textSeeVideo {
     font-size: 3.5vw;
     margin-bottom: 6%;
+    margin-top: 3%;
   }
   .rightImg {
     width: 45%;
@@ -184,18 +169,13 @@ html,
     margin-left: 5%;
     padding: 10px;
   }
-  .btn-secondary {
-    padding: 1.5vw;
-    font-size: 3vw;
-  }
-  .underContainer {
-    width: 40%;
-    margin-bottom: 10%;
-  }
 }
 @media screen and (max-width: 716px) {
   .btn-secondary {
     font-size: 4vw;
+  }
+  .jobAfterLearn {
+    margin-top: 8%;
   }
 }
 </style>

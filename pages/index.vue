@@ -4,11 +4,11 @@
 
     <div class="bigContainer">
       <b-img src="~assets/banner.svg" fluld />
-      <p class="title">กิจกรรมค้นหาวิชาสาขาสำหรับคุณ</p>
+      <p class="title">กิจกรรมสื่อวีดีโอเพื่อสร้างแรง บรรดาลใจ</p>
       <p class="subtitle">
         โปรดเลือกสิ่งที่คุณสนใจ มีทักษะ หรือชื่นชอบ <br />
-        เพื่อรับชมวิดีโอของสาขาวิชาที่เหมาะกับคุณ <br />
-        ผ่านแบบสอบถามสั้น ๆ ต่อไปนี้
+        เพื่อรับชมวิดีโอของสาขาวิชาที่เหมาะกับคุณ ผ่านแบบสอบถามสั้น ๆ <br />
+        ต่อไปนี้เพื่อรับชมสื่อวีดีโอแต่ละสาขา
       </p>
       <nuxt-link class="btn-link" to="/selectChoice">
         <b-button>เริ่มทำแบบสอบถาม</b-button>
@@ -38,6 +38,9 @@ html,
   padding: 90px;
   display: flex;
   flex-direction: column;
+  background-image: url('~assets/backgroundCom.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .title {
   font-weight: bold;
@@ -61,20 +64,21 @@ html,
 .btn-link {
   width: 30%;
 }
-@media screen and (min-width: 717px) {
+@media screen and (min-width: 1151px) {
   img {
     display: none;
   }
 }
 @media screen and (max-width: 1150px) {
   .bigContainer {
-    margin-top: 30%;
+    margin-top: 8%;
+    background-image: none;
   }
   .title {
-    font-size: 5.5vw;
+    font-size: 4.5vw;
   }
   .subtitle {
-    font-size: 3.5vw;
+    font-size: 2.8vw;
   }
   .btn-secondary {
     font-size: 3vw;
@@ -82,14 +86,14 @@ html,
   .btn-link {
     width: 40%;
   }
-}
-@media screen and (max-width: 716px) {
   img {
     width: 100%;
   }
+}
+@media screen and (max-width: 716px) {
   .bigContainer {
-    padding: 8vw;
-    margin-top: 5vh;
+    padding: 7vw;
+    margin-top: 6vh;
   }
   .btn-secondary {
     font-size: 4vw;
@@ -99,7 +103,7 @@ html,
     font-size: 4vw;
   }
   .btn-link {
-    width:50%;
+    width: 50%;
   }
 }
 </style>
