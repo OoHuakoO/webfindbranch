@@ -2,13 +2,13 @@
   <div class="body">
     <Header />
     <div class="bigContainer">
+      <p class="title">{{ branch }}</p>
       <video class="video" controls="controls" @ended="endedVideo">
         <source :src="require('@/assets/testVideo.mp4')" type="video/mp4" />
       </video>
     </div>
   </div>
 </template>
-
 <script>
 import Header from '@/components/header'
 import VideoPlayer from 'nuxt-video-player'
@@ -21,6 +21,7 @@ export default {
   data() {
     return {
       endedVideoState: false,
+      branch: this.$route.params.branch,
     }
   },
   methods: {
@@ -40,9 +41,12 @@ html,
 * {
   font-family: 'Sukhumvit';
 }
-p {
+.title {
+  color: #feb249;
   font-weight: bold;
-  font-size: 1.8vw;
+  font-size: 4vw;
+  margin-bottom: 3%;
+  text-align: center;
 }
 .video {
   width: 70%;
@@ -71,14 +75,16 @@ p {
 @media screen and (max-width: 1150px) {
   .bigContainer {
     padding: 0vw;
-    margin-top: 25vh;
+    margin-top: 20vh;
   }
-
   .video {
     width: 80%;
   }
-  p {
-    font-size: 3vw;
+  .title {
+    color: #feb249;
+    font-weight: bold;
+    font-size: 4vw;
+    margin-bottom: 5%;
   }
   .container {
     width: 70%;
@@ -89,8 +95,11 @@ p {
   .video {
     width: 90%;
   }
-  p {
+  .title {
+    color: #feb249;
+    font-weight: bold;
     font-size: 4vw;
+    margin-bottom: 7%;
   }
 }
 </style>

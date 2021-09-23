@@ -1,7 +1,6 @@
 <template>
   <div class="body">
     <Header />
-
     <div class="bigContainer">
       <b-img src="~assets/banner.svg" fluld />
       <p class="title">กิจกรรมสื่อวีดีโอเพื่อสร้างแรง บรรดาลใจ</p>
@@ -10,7 +9,7 @@
         เพื่อรับชมวิดีโอของสาขาวิชาที่เหมาะกับคุณ ผ่านแบบสอบถามสั้น ๆ <br />
         ต่อไปนี้เพื่อรับชมสื่อวีดีโอแต่ละสาขา
       </p>
-      <nuxt-link class="btn-link" to="/selectChoice">
+      <nuxt-link class="btn-link" to="/selectChoice/page1">
         <b-button>เริ่มทำแบบสอบถาม</b-button>
       </nuxt-link>
     </div>
