@@ -28,7 +28,7 @@
           path: pathNavigate,
         }"
       >
-        <b-button>ถัดไป</b-button>
+        <b-button @click="saveBranch()">ถัดไป</b-button>
       </nuxt-link>
       <div v-if="!choiceDisable" class="boxButtonDisable">
         <b-button class="buttonDisable">ถัดไป</b-button>
@@ -60,7 +60,30 @@ export default {
     }
   },
   methods: {
-    selectedChoice(index) {
+    async saveBranch() {
+      this.choice.map( async(item) => {
+        if (item.check) {
+          if (item.name === 'การเขียนโปรแกรม') {
+            await this.$axios
+              .post('https://serverwebfindbranch.herokuapp.com/branch', {
+                branchName: 'CS',
+              })
+              .then((res) => {
+                console.log(JSON.stringify(res.data))
+              })
+          } else if (item.name === 'การวิเคราะห์ข้อมูล และความปลอดภัย') {
+            await this.$axios
+              .post('https://serverwebfindbranch.herokuapp.com/branch', {
+                branchName: 'DSC',
+              })
+              .then((res) => {
+                console.log(JSON.stringify(res.data))
+              })
+          }
+        }
+      })
+    },
+    async selectedChoice(index) {
       this.choice[index].check = !this.choice[index].check
       if (this.choiceDisable) {
         if (this.choice[index].check) {
@@ -79,7 +102,8 @@ export default {
         this.choice[index].check &&
         this.choice[index].name === 'การวิเคราะห์ข้อมูล และความปลอดภัย'
       ) {
-        this.pathNavigate = '/videoShow/สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล'
+        this.pathNavigate =
+          '/videoShow/สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล'
       }
       this.mapChoice()
     },

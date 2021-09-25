@@ -28,7 +28,7 @@
           path: pathNavigate,
         }"
       >
-        <b-button>ถัดไป</b-button>
+        <b-button @click="saveBranch()">ถัดไป</b-button>
       </nuxt-link>
       <div v-if="!choiceDisable" class="boxButtonDisable">
         <b-button class="buttonDisable">ถัดไป</b-button>
@@ -60,7 +60,30 @@ export default {
     }
   },
   methods: {
-    selectedChoice(index) {
+    async saveBranch() {
+      this.choice.map(async (item) => {
+        if (item.check) {
+          if (item.name === 'การวางระบบ') {
+            await this.$axios
+              .post('https://serverwebfindbranch.herokuapp.com/branch', {
+                branchName: 'IT',
+              })
+              .then((res) => {
+                console.log(JSON.stringify(res.data))
+              })
+          } else if (item.name === 'Storytelling') {
+            await this.$axios
+              .post('https://serverwebfindbranch.herokuapp.com/branch', {
+                branchName: 'GIM',
+              })
+              .then((res) => {
+                console.log(JSON.stringify(res.data))
+              })
+          }
+        }
+      })
+    },
+    async selectedChoice(index) {
       this.choice[index].check = !this.choice[index].check
       if (this.choiceDisable) {
         if (this.choice[index].check) {

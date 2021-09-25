@@ -55,7 +55,7 @@
           path: pathNavigate,
         }"
       >
-        <b-button>ถัดไป</b-button>
+        <b-button @click="saveChoice()">ถัดไป</b-button>
       </nuxt-link>
       <div v-if="!choiceDisable" class="boxButtonDisable">
         <b-button class="buttonDisable">ถัดไป</b-button>
@@ -126,6 +126,21 @@ export default {
     }
   },
   methods: {
+    async saveChoice() {
+      let listChoice = []
+      this.choice.map((item) => {
+        if (item.check) {
+          listChoice.push(item.name)
+        }
+      })
+      await this.$axios
+        .post('https://serverwebfindbranch.herokuapp.com/choice', {
+          listChoice: listChoice,
+        })
+        .then((res) => {
+          console.log(JSON.stringify(res.data))
+        })
+    },
     selectedChoice(index) {
       this.choice[index].check = !this.choice[index].check
       if (this.choiceDisable) {

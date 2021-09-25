@@ -56,7 +56,7 @@
           query: { pointBranch: pointBranch },
         }"
       >
-        <b-button>ถัดไป</b-button>
+        <b-button @click="saveChoice()">ถัดไป</b-button>
       </nuxt-link>
       <div v-if="!choiceDisable" class="boxButtonDisable">
         <b-button class="buttonDisable">ถัดไป</b-button>
@@ -122,11 +122,26 @@ export default {
   },
   mounted() {
     console.log('mouted')
-    console.log('this.pointBranch.pointIT',this.pointBranch.pointIT)
-    console.log('this.pointBranch.pointGIM',this.pointBranch.pointGIM)
-    console.log('this.pointBranch.pointCS',this.pointBranch.pointCS)
+    console.log('this.pointBranch.pointIT', this.pointBranch.pointIT)
+    console.log('this.pointBranch.pointGIM', this.pointBranch.pointGIM)
+    console.log('this.pointBranch.pointCS', this.pointBranch.pointCS)
   },
   methods: {
+    async saveChoice() {
+      let listChoice = []
+      this.choice.map((item) => {
+        if (item.check) {
+          listChoice.push(item.name)
+        }
+      })
+      await this.$axios
+        .post('https://serverwebfindbranch.herokuapp.com/choice', {
+          listChoice: listChoice,
+        })
+        .then((res) => {
+          console.log(JSON.stringify(res.data))
+        })
+    },
     selectedChoice(index) {
       this.choice[index].check = !this.choice[index].check
       if (this.choiceDisable) {
@@ -234,7 +249,6 @@ span {
   font-size: 1.8vw;
   border-radius: 10px;
   margin-top: 3vh;
-  
 }
 .smallCircle {
   background-color: #ffffff;
