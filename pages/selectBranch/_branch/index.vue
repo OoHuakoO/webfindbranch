@@ -49,10 +49,10 @@ export default {
   watch: {
     count: {
       handler: function (val) {
-        if (val === 0) {
-          // this.$router.push({
-          //   path: `/videoShow/${this.branch}`,
-          // })
+        if (val === 1) {
+          this.$router.push({
+            path: `/videoShow/${this.branch}`,
+          })
         }
       },
     },
@@ -65,27 +65,23 @@ export default {
     },
     checkID() {
       if (this.$route.params.branch === 'สาขาวิชาเทคโนโลยีสารสนเทศ') {
-        this.picture =
-          'https://bahmansport.com/media/com_store/images/empty.png'
-        this.branch = 'สาขาวิชาเทคโนโลยีสารสนเทศ'
+        ;(this.picture = require('@/assets/it.png')),
+          (this.branch = 'สาขาวิชาเทคโนโลยีสารสนเทศ')
       } else if (
         this.$route.params.branch ===
-        'สาขาวิชาวิทยาการคอมพิวเตอร์มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล'
+        'สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล'
       ) {
-        this.picture =
-          'https://bahmansport.com/media/com_store/images/empty.png'
-        this.branch =
-          'สาขาวิชาวิทยาการคอมพิวเตอร์มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล'
+        ;(this.picture = require('@/assets/dsc.png')),
+          (this.branch =
+            'สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล')
       } else if (this.$route.params.branch === 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ') {
-        this.picture =
-          'https://bahmansport.com/media/com_store/images/empty.png'
-        this.branch = 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ'
+        ;(this.picture = require('@/assets/gim.png')),
+          (this.branch = 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ')
       } else if (
-        this.$route.params.branch === 'สาขาวิชาสาขาวิชาวิทยาการคอมพิวเตอร์'
+        this.$route.params.branch === 'สาขาวิชาวิทยาการคอมพิวเตอร์'
       ) {
-        this.picture =
-          'https://bahmansport.com/media/com_store/images/empty.png'
-        this.branch = 'สาขาวิชาสาขาวิชาวิทยาการคอมพิวเตอร์'
+        ;(this.picture = require('@/assets/cs.png')),
+          (this.branch = 'สาขาวิชาวิทยาการคอมพิวเตอร์')
       }
     },
     startTimer() {
@@ -222,7 +218,7 @@ html,
     height: 30px;
   }
   .bigContainer {
-    margin-top: 16%;
+    margin-top: 5%;
   }
   .btn-secondary {
     padding: 2vw;

@@ -97,13 +97,13 @@ export default {
         this.choice[index].check &&
         this.choice[index].name === 'การเขียนโปรแกรม'
       ) {
-        this.pathNavigate = '/videoShow/สาขาวิชาวิทยาการคอมพิวเตอร์'
+        this.pathNavigate = '/selectBranch/สาขาวิชาวิทยาการคอมพิวเตอร์'
       } else if (
         this.choice[index].check &&
         this.choice[index].name === 'การวิเคราะห์ข้อมูล และความปลอดภัย'
       ) {
         this.pathNavigate =
-          '/videoShow/สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล'
+          '/selectBranch/สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล'
       }
       this.mapChoice()
     },
