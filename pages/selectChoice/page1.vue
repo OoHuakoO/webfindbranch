@@ -178,7 +178,7 @@ export default {
             this.pointBranch.pointGIM = this.pointBranch.pointGIM + 1
           } else if (item.name === 'การออกแบบและกราฟฟิกดีไซน์') {
             this.pointBranch.pointIT = this.pointBranch.pointIT + 0.5
-            this.pointBranch.pointGIM = this.pointBranch.pointGIM + 1
+            this.pointBranch.pointGIM = this.pointBranch.pointGIM + 0.5
           } else if (item.name === 'การแก้ปัญหา') {
             this.pointBranch.pointCS = this.pointBranch.pointCS + 1
           } else if (item.name === 'การเขียนโปรแกรม') {
