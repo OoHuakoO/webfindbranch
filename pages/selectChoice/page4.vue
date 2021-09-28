@@ -53,7 +53,7 @@ export default {
           check: false,
         },
         {
-          name: 'ตรรกศาสตร์และการคำนวณ',
+          name: 'การเขียนโปรแกรม',
           check: false,
         },
       ],
@@ -77,7 +77,7 @@ export default {
         this.pathNavigate = '/selectChoice/page3'
       } else if (
         this.choice[index].check &&
-        this.choice[index].name === 'ตรรกศาสตร์และการคำนวณ'
+        this.choice[index].name === 'การเขียนโปรแกรม'
       ) {
         this.pathNavigate = '/selectChoice/page5'
       }
