@@ -82,7 +82,7 @@ export default {
       choiceDisable: false,
       choice: [
         {
-          name: 'ธุรกิจออนไลน์',
+          name: 'ธุรกิจ',
           check: false,
         },
         {
@@ -165,7 +165,7 @@ export default {
           if (this.countPoint === 3) {
             this.choiceDisable = true
           }
-          if (item.name === 'ธุรกิจออนไลน์') {
+          if (item.name === 'ธุรกิจ') {
             this.pointBranch.pointIT = this.pointBranch.pointIT + 1.5
           } else if (item.name === 'การประยุกต์ใช้เทคโนโลยี') {
             this.pointBranch.pointIT = this.pointBranch.pointIT + 1
