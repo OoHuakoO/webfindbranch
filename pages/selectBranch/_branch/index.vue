@@ -125,16 +125,16 @@ html,
   flex-direction: column;
 }
 .progressbar {
-  height: 30px;
+  height: 15px;
 }
 .seeVideo {
   margin-top: 1%;
   margin-left: 3%;
-  font-size: 2vw;
+  font-size: 1.2vw;
 }
 .title {
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 2vw;
   text-align: center;
   color: #feb249;
 }
@@ -146,8 +146,8 @@ html,
 .moreText {
   text-align: center;
   font-weight: 300;
-  font-size: 2vw;
-  margin-top: 3%;
+  font-size: 1.5vw;
+  margin-top: 0%;
 }
 .btn-secondary {
   background-color: #feb249;
@@ -163,9 +163,9 @@ html,
   margin-bottom: 5%;
 }
 .rightImg {
-  width: 30%;
-  margin-top: 2%;
-  margin-bottom: 3%;
+  width: 20%;
+  margin-top: 0%;
+  margin-bottom: 2%;
 }
 @media screen and (max-width: 1150px) {
   .moreText {
@@ -197,6 +197,8 @@ html,
   }
   .rightImg {
     width: 45%;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
 }
 @media screen and (max-width: 716px) {

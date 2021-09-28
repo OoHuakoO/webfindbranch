@@ -86,7 +86,7 @@ export default {
           check: false,
         },
         {
-          name: 'การประยุกต์ใช้เทคโนโลยี',
+          name: 'ความสนใจเกี่ยวกับเทคโนโลยีสมัยใหม่',
           check: false,
         },
         {
@@ -106,7 +106,7 @@ export default {
           check: false,
         },
         {
-          name: 'การแก้ปัญหา',
+          name: 'ตรรกะและการคำนวณ',
           check: false,
         },
         {
@@ -114,7 +114,7 @@ export default {
           check: false,
         },
         {
-          name: 'การใช้เหตุผลและการตั้งสมุติฐาน',
+          name: 'ปริศนาและการทดลอง',
           check: false,
         },
       ],
@@ -167,7 +167,7 @@ export default {
           }
           if (item.name === 'ธุรกิจ') {
             this.pointBranch.pointIT = this.pointBranch.pointIT + 1.5
-          } else if (item.name === 'การประยุกต์ใช้เทคโนโลยี') {
+          } else if (item.name === 'ความสนใจเกี่ยวกับเทคโนโลยีสมัยใหม่') {
             this.pointBranch.pointIT = this.pointBranch.pointIT + 1
           } else if (item.name === 'การใช้โปรแกรมสร้างสรรค์ผลงาน') {
             this.pointBranch.pointIT = this.pointBranch.pointIT + 1
@@ -179,14 +179,17 @@ export default {
           } else if (item.name === 'การออกแบบและกราฟฟิกดีไซน์') {
             this.pointBranch.pointIT = this.pointBranch.pointIT + 0.5
             this.pointBranch.pointGIM = this.pointBranch.pointGIM + 0.5
-          } else if (item.name === 'การแก้ปัญหา') {
+          } else if (item.name === 'ตรรกะและการคำนวณ') {
             this.pointBranch.pointCS = this.pointBranch.pointCS + 1
           } else if (item.name === 'การเขียนโปรแกรม') {
             this.pointBranch.pointIT = this.pointBranch.pointIT + 0.5
             this.pointBranch.pointCS = this.pointBranch.pointCS + 1
-          } else if (item.name === 'การใช้เหตุผลและการตั้งสมุติฐาน') {
+          } else if (item.name === 'ปริศนาและการทดลอง') {
             this.pointBranch.pointCS = this.pointBranch.pointCS + 1.5
           }
+          // console.log('Before this.pointBranch.pointIT', this.pointBranch.pointIT)
+          // console.log('Before this.pointBranch.pointGIM', this.pointBranch.pointGIM)
+          // console.log('Before this.pointBranch.pointCS', this.pointBranch.pointCS)
         }
       })
     },

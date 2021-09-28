@@ -211,9 +211,9 @@ export default {
           ) {
             this.pathNavigate = '/selectChoice/page4'
           }
-          console.log('this.pointBranch.pointIT', this.pointBranch.pointIT)
-          console.log('this.pointBranch.pointGIM', this.pointBranch.pointGIM)
-          console.log('this.pointBranch.pointCS', this.pointBranch.pointCS)
+          // console.log('this.pointBranch.pointIT', this.pointBranch.pointIT)
+          // console.log('this.pointBranch.pointGIM', this.pointBranch.pointGIM)
+          // console.log('this.pointBranch.pointCS', this.pointBranch.pointCS)
         }
       })
     },
