@@ -84,13 +84,13 @@ html,
   border-radius: 20px;
 }
 .rightImg {
-  width: 40%;
+  width: 20%;
   border-radius: 10px;
 }
 .jobAfterLearn {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-weight: 600;
-  margin-top: 6%;
+  margin-top: 3%;
   color: #ffffff;
 }
 .bigContainer {
@@ -99,14 +99,15 @@ html,
   flex-direction: row;
 }
 .leftContainer {
-  width: 90%;
+  width: 50%;
   align-items: center;
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  padding: 2vw;
+  padding: 1vw;
   background-color: #feb249;
   border-radius: 20px;
+  margin-right: 5%;
 }
 .rightContainer {
   width: 40%;
@@ -121,7 +122,7 @@ html,
   margin-left: 5%;
   text-align: center;
   border-left: solid 2px #feb249;
-  padding: 10px;
+  padding: 5px;
   color: #feb249;
 }
 .boxImage {
@@ -130,9 +131,6 @@ html,
   width: 100%;
 }
 
-.btn-link {
-  width: 100%;
-}
 @media screen and (max-width: 1150px) {
   .bigContainer {
     padding: 8vh 10vw 1vh 10vw;
@@ -146,6 +144,7 @@ html,
     display: flex;
     flex-direction: column;
     text-decoration: none;
+    padding: 3vw;
   }
   .rightContainer {
     width: 90%;

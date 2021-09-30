@@ -231,19 +231,19 @@ html,
 span {
   margin-left: 10px;
   font-weight: 600;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 .bigContainer {
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 5vw;
+  padding: 3vw;
   height: 100%;
 }
 .title {
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 2.5vw;
   text-align: center;
 }
 .subtitle {
@@ -251,31 +251,26 @@ span {
   font-weight: 300;
   font-size: 2vw;
 }
-.note {
-  margin-top: 30px;
-  font-size: 1.5vw;
-  font-weight: 300;
-}
 .btn-secondary {
   background-color: #feb249;
   border-color: #feb249;
   width: 100%;
   padding: 1vw;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   border-radius: 10px;
-  margin-top: 3vh;
+  margin-top: 1vh;
 }
 .boxButtonDisable {
-  width: 30%;
+  width: 20%;
 }
 .buttonDisable {
   background-color: #9a9a9c;
   border-color: #9a9a9c;
   width: 100%;
   padding: 1vw;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   border-radius: 10px;
-  margin-top: 3vh;
+  margin-top: 1vh;
 }
 .smallCircle {
   background-color: #ffffff;
@@ -335,12 +330,12 @@ span {
   margin-top: 30px;
 }
 .btn-link {
-  width: 30%;
+  width: 20%;
 }
 @media screen and (max-width: 1150px) {
   .bigContainer {
-    padding: 5vw;
-    margin-top: 10vh;
+  padding: 3vw;
+    margin-top: 20vh;
   }
   .title {
     font-size: 5vw;

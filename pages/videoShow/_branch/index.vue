@@ -44,12 +44,12 @@ html,
 .title {
   color: #feb249;
   font-weight: bold;
-  font-size: 4vw;
-  margin-bottom: 3%;
+  font-size: 3vw;
+  margin-bottom: 1%;
   text-align: center;
 }
 .video {
-  width: 70%;
+  width: 55%;
 }
 .yellowText {
   color: #feb249;
@@ -68,7 +68,7 @@ html,
 .bigContainer {
   justify-content: center;
   align-items: center;
-  padding: 5vw;
+  padding: 2vw;
   display: flex;
   flex-direction: column;
 }

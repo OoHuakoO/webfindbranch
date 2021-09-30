@@ -43,25 +43,25 @@ html,
 }
 .title {
   font-weight: bold;
-  font-size: 5vw;
+  font-size: 4.5vw;
   text-align: center;
 }
 .subtitle {
   text-align: center;
   font-weight: 300;
-  font-size: 3vw;
+  font-size:2.5vw;
 }
 .btn-secondary {
   background-color: #feb249;
   border-color: #feb249;
   width: 100%;
   padding: 1vw;
-  font-size: 2vw;
+  font-size: 1.5vw;
   border-radius: 10px;
   margin-top: 5%;
 }
 .btn-link {
-  width: 30%;
+  width: 25%;
 }
 @media screen and (min-width: 1151px) {
   img {

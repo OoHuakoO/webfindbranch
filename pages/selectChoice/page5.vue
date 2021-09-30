@@ -139,12 +139,12 @@ span {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 5vw;
+  padding: 3vw;
   height: 100%;
 }
 .title {
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 2.5vw;
   text-align: center;
 }
 .subtitle {
@@ -157,21 +157,21 @@ span {
   border-color: #feb249;
   width: 100%;
   padding: 1vw;
-  font-size: 1.8vw;
+font-size: 1.5vw;
   border-radius: 10px;
-  margin-top: 3vh;
+  margin-top: 1vh;
 }
 .boxButtonDisable {
-  width: 30%;
+  width: 20%;
 }
 .buttonDisable {
   background-color: #9a9a9c;
   border-color: #9a9a9c;
   width: 100%;
   padding: 1vw;
-  font-size: 1.8vw;
+   font-size: 1.5vw;
   border-radius: 10px;
-  margin-top: 3vh;
+  margin-top: 1vh;
 }
 .smallCircle {
   background-color: #ffffff;
@@ -220,11 +220,11 @@ span {
   margin-bottom: 20px;
 }
 .boxChoice {
-  margin-bottom: 8%;
-  margin-top: 8%;
+ margin-bottom: 5%;
+  margin-top: 5%;
 }
 .btn-link {
-  width: 30%;
+   width: 20%;
 }
 @media screen and (max-width: 1150px) {
   .bigContainer {
