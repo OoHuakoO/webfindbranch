@@ -88,7 +88,7 @@ export default {
           titleDetail: 'Data Science',
           subtitleDetail:
             'ขึ้นชื่อว่าเป็นสายงานทเป็นที่ต้องการ มากที่สุดในโลก ที่แต่ละองค์กรโดยเฉพาะองค์กรที่ใช้เทคโนโลยีสมัยใหม่ในการขับเคลื่อนการดำเนินงานและธุรกิจการวิเคราะข้อมูลเป้นศาสตร์ที่มีความสำคัญมากในโลกยุคใหม่ที่เต็มไปด้วยข้อมูลมากมาย การวิเคราะห์ข้อมูลจึงสำคัญเพื่อให้องค์กรและธุรกิจนำข้อมุลไปใช้ให้เกิดประโยชน์สูงสุด',
-          picture: require('@/assets/Data Science.png'),
+          picture: require('@/assets/Data ScienceSmall.png'),
         },
         {
           titleDetail: 'Programmer & Developer',
