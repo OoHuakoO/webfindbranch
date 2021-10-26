@@ -49,7 +49,7 @@ export default {
       pathNavigate: '',
       choice: [
         {
-          name: 'การเขียนโปรแกรม',
+          name: 'การพัฒนาแอปพลิเคชัน',
           check: false,
         },
         {
@@ -63,7 +63,7 @@ export default {
     async saveBranch() {
       this.choice.map( async(item) => {
         if (item.check) {
-          if (item.name === 'การเขียนโปรแกรม') {
+          if (item.name === 'การพัฒนาแอปพลิเคชัน') {
             await this.$axios
               .post('https://serverwebfindbranch.herokuapp.com/branch', {
                 branchName: 'CS',
@@ -95,7 +95,7 @@ export default {
       }
       if (
         this.choice[index].check &&
-        this.choice[index].name === 'การเขียนโปรแกรม'
+        this.choice[index].name === 'การพัฒนาแอปพลิเคชัน'
       ) {
         this.pathNavigate = '/selectBranch/สาขาวิชาวิทยาการคอมพิวเตอร์'
       } else if (

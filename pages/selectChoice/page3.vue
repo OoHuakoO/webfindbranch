@@ -49,11 +49,11 @@ export default {
       pathNavigate: '',
       choice: [
         {
-          name: 'การวางระบบ',
+          name: 'การออกแบบระบบและการพัฒนาแอปพลิเคชัน',
           check: false,
         },
         {
-          name: 'Storytelling',
+          name: 'Storytelling(การเล่าเรื่อง,Storyboard,การสร้างเกม,สื่อดิจิตอล)',
           check: false,
         },
       ],
@@ -63,7 +63,7 @@ export default {
     async saveBranch() {
       this.choice.map(async (item) => {
         if (item.check) {
-          if (item.name === 'การวางระบบ') {
+          if (item.name === 'การออกแบบระบบและการพัฒนาแอปพลิเคชัน') {
             await this.$axios
               .post('https://serverwebfindbranch.herokuapp.com/branch', {
                 branchName: 'IT',
@@ -71,7 +71,7 @@ export default {
               .then((res) => {
                 console.log(JSON.stringify(res.data))
               })
-          } else if (item.name === 'Storytelling') {
+          } else if (item.name === 'Storytelling(การเล่าเรื่อง,Storyboard,การสร้างเกม,สื่อดิจิตอล)') {
             await this.$axios
               .post('https://serverwebfindbranch.herokuapp.com/branch', {
                 branchName: 'GIM',
@@ -95,12 +95,12 @@ export default {
       }
       if (
         this.choice[index].check &&
-        this.choice[index].name === 'การวางระบบ'
+        this.choice[index].name === 'การออกแบบระบบและการพัฒนาแอปพลิเคชัน'
       ) {
         this.pathNavigate = '/selectBranch/สาขาวิชาเทคโนโลยีสารสนเทศ'
       } else if (
         this.choice[index].check &&
-        this.choice[index].name === 'Storytelling'
+        this.choice[index].name === 'Storytelling(การเล่าเรื่อง,Storyboard,การสร้างเกม,สื่อดิจิตอล)'
       ) {
         this.pathNavigate = '/selectBranch/สาขาวิชาเกมและสื่อเชิงโต้ตอบ'
       }

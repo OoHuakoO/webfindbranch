@@ -49,7 +49,7 @@ export default {
       pathNavigate: '',
       choice: [
         {
-          name: 'อุปกรณ์ไอทีและ Smart device',
+          name: 'อุปกรณ์IT(IoT,Gamminng Gear,Smart Device)',
           check: false,
         },
         {
@@ -72,7 +72,7 @@ export default {
       }
       if (
         this.choice[index].check &&
-        this.choice[index].name === 'อุปกรณ์ไอทีและ Smart device'
+        this.choice[index].name === 'อุปกรณ์IT(IoT,Gamminng Gear,Smart Device)'
       ) {
         this.pathNavigate = '/selectChoice/page3'
       } else if (
