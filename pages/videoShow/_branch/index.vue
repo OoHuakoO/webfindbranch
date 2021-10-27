@@ -44,7 +44,6 @@
 <script>
 import Header from '@/components/header'
 import VideoPlayer from 'nuxt-video-player'
-
 require('nuxt-video-player/src/assets/css/main.css')
 export default {
   components: {
@@ -81,11 +80,8 @@ html,
   margin-bottom: 1%;
   text-align: center;
 }
-.test {
-  padding: 10px;
-}
 .video {
-  width: 80%;
+  width: 55%;
 }
 .yellowText {
   color: #feb249;
