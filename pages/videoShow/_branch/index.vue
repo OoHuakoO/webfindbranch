@@ -3,7 +3,39 @@
     <Header />
     <div class="bigContainer">
       <p class="title">{{ branch }}</p>
-      <video class="video" controls="controls" @ended="endedVideo">
+      <video
+        v-if="branch == 'สาขาวิชาเทคโนโลยีสารสนเทศ'"
+        class="video"
+        controls="controls"
+        @ended="endedVideo"
+      >
+        <source :src="require('@/assets/IT.mp4')" type="video/mp4" />
+      </video>
+      <video
+        v-if="branch == 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ'"
+        class="video"
+        controls="controls"
+        @ended="endedVideo"
+      >
+        <source :src="require('@/assets/testVideo.mp4')" type="video/mp4" />
+      </video>
+      <video
+        v-if="branch == 'สาขาวิชาวิทยาการคอมพิวเตอร์'"
+        class="video"
+        controls="controls"
+        @ended="endedVideo"
+      >
+        <source :src="require('@/assets/DataScience.mp4')" type="video/mp4" />
+      </video>
+      <video
+        v-if="
+          branch ==
+          'สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล'
+        "
+        class="video"
+        controls="controls"
+        @ended="endedVideo"
+      >
         <source :src="require('@/assets/testVideo.mp4')" type="video/mp4" />
       </video>
     </div>
@@ -12,6 +44,7 @@
 <script>
 import Header from '@/components/header'
 import VideoPlayer from 'nuxt-video-player'
+
 require('nuxt-video-player/src/assets/css/main.css')
 export default {
   components: {
@@ -48,8 +81,11 @@ html,
   margin-bottom: 1%;
   text-align: center;
 }
+.test {
+  padding: 10px;
+}
 .video {
-  width: 55%;
+  width: 80%;
 }
 .yellowText {
   color: #feb249;
