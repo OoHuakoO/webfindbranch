@@ -17,7 +17,7 @@
         controls="controls"
         @ended="endedVideo"
       >
-        <source :src="require('@/assets/DataScience.mp4')" type="video/mp4" />
+        <source :src="require('@/assets/testVideo.mp4')" type="video/mp4" />
       </video>
       <video
         v-if="branch == 'สาขาวิชาวิทยาการคอมพิวเตอร์'"
@@ -25,7 +25,7 @@
         controls="controls"
         @ended="endedVideo"
       >
-        <source :src="require('@/assets/DataScience.mp4')" type="video/mp4" />
+        <source :src="require('@/assets/testVideo.mp4')" type="video/mp4" />
       </video>
       <video
         v-if="
