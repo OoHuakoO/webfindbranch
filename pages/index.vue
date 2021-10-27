@@ -5,9 +5,12 @@
       <b-img src="~assets/banner.svg" fluld />
       <p class="title">กิจกรรมสื่อวีดีโอเพื่อสร้างแรง บรรดาลใจ</p>
       <p class="subtitle">
-        โปรดเลือกสิ่งที่คุณสนใจ มีทักษะ หรือชื่นชอบ <br />
-        เพื่อรับชมวิดีโอของสาขาวิชาที่เหมาะกับคุณ ผ่านแบบสอบถามสั้น ๆ <br />
-        ต่อไปนี้เพื่อรับชมสื่อวีดีโอแต่ละสาขา
+        โปรดเลือกความสนใจและทักษะที่ต้องการศึกษาเพิ่มเติม <br />
+        เพื่อรับชมวิดีโอของสาขาวิชาในคณะเทคโนโลยีสารสนเทศและนวัตกรรม <br />
+        ที่เหมาะกับคุณ ผ่านแบบสอบถามสั้น ๆ
+      </p>
+      <p class="subtitle-sub">
+        “กรุณาทำแบบสอบถามต่อไปนี้เพื่อรับชมสื่อวีดีโอ ของสาขาวิชาที่เหมาะกับคุณ”
       </p>
       <nuxt-link class="btn-link" to="/selectChoice/page1">
         <b-button>เริ่มทำแบบสอบถาม</b-button>
@@ -43,13 +46,18 @@ html,
 }
 .title {
   font-weight: bold;
-  font-size: 4.5vw;
+  font-size: 4vw;
   text-align: center;
 }
 .subtitle {
   text-align: center;
   font-weight: 300;
-  font-size:2.5vw;
+  font-size: 2vw;
+}
+.subtitle-sub{
+  text-align: center;
+  font-weight: 300;
+  font-size: 2.5vw;
 }
 .btn-secondary {
   background-color: #feb249;
