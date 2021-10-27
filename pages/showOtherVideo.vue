@@ -52,7 +52,7 @@ export default {
           picture: 'https://bahmansport.com/media/com_store/images/empty.png',
         },
         {
-          name: 'สาขาวิชาวิทยาการคอมพิวเตอร์ความปลอดภัยทางไซเบอร์',
+          name: 'สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล',
           picture: 'https://bahmansport.com/media/com_store/images/empty.png',
         },
       ],
