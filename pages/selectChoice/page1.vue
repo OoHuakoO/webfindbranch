@@ -94,7 +94,7 @@ export default {
           check: false,
         },
         {
-          name: 'เกม(วีดีโอเกม,กีฬาesport)',
+          name: 'เกม (วิดีโอเกม, กีฬา E-Sport)',
           check: false,
         },
         {
@@ -102,7 +102,7 @@ export default {
           check: false,
         },
         {
-          name: 'การออกแบบและกราฟฟิกดีไซน์',
+          name: 'การออกแบบและกราฟิกดีไซน์',
           check: false,
         },
         {
@@ -172,7 +172,7 @@ export default {
           } else if (item.name === 'การใช้โปรแกรมสร้างสรรค์ผลงาน') {
             this.pointBranch.pointIT = this.pointBranch.pointIT + 1
             this.pointBranch.pointGIM = this.pointBranch.pointGIM + 0.5
-          } else if (item.name === 'เกม(วีดีโอเกม,กีฬาesport)') {
+          } else if (item.name === 'เกม (วิดีโอเกม, กีฬา E-Sport)') {
             this.pointBranch.pointGIM = this.pointBranch.pointGIM + 1.5
           } else if (item.name === 'การวาดรูปและศิลปะ') {
             this.pointBranch.pointGIM = this.pointBranch.pointGIM + 1

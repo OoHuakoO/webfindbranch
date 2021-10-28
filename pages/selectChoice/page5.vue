@@ -53,7 +53,7 @@ export default {
           check: false,
         },
         {
-          name: 'การวิเคราะห์ข้อมูล และความปลอดภัย',
+          name: 'การวิเคราะห์ข้อมูลและความปลอดภัย',
           check: false,
         },
       ],
@@ -71,7 +71,7 @@ export default {
               .then((res) => {
                 console.log(JSON.stringify(res.data))
               })
-          } else if (item.name === 'การวิเคราะห์ข้อมูล และความปลอดภัย') {
+          } else if (item.name === 'การวิเคราะห์ข้อมูลและความปลอดภัย') {
             await this.$axios
               .post('https://serverwebfindbranch.herokuapp.com/branch', {
                 branchName: 'DSC',
@@ -100,7 +100,7 @@ export default {
         this.pathNavigate = '/selectBranch/สาขาวิชาวิทยาการคอมพิวเตอร์'
       } else if (
         this.choice[index].check &&
-        this.choice[index].name === 'การวิเคราะห์ข้อมูล และความปลอดภัย'
+        this.choice[index].name === 'การวิเคราะห์ข้อมูลและความปลอดภัย'
       ) {
         this.pathNavigate =
           '/selectBranch/สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล'

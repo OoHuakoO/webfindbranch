@@ -2,16 +2,17 @@
   <div class="body">
     <Header />
     <div class="bigContainer">
-      <b-img src="~assets/banner.svg" fluld />
-      <p class="title">กิจกรรมสื่อวีดีโอเพื่อสร้างแรง บรรดาลใจ</p>
+      <b-img src="~assets/BU_logo_horizontal.png" fluld />
+      <p class="title">กิจกรรมสื่อวิดีโอเพื่อสร้างแรงบันดาลใจ</p>
       <p class="subtitle">
         โปรดเลือกความสนใจและทักษะที่ต้องการศึกษาเพิ่มเติม <br />
-        เพื่อรับชมวิดีโอของสาขาวิชาในคณะเทคโนโลยีสารสนเทศและนวัตกรรม <br />
-        ที่เหมาะกับคุณ ผ่านแบบสอบถามสั้น ๆ
+        เพื่อรับชมวิดีโอของสาขาวิชาใน<span class="subtitie-bold"
+          >คณะเทคโนโลยีสารสนเทศและนวัตกรรม มหาวิทยาลัยกรุงเทพ </span
+        ><br />
+        ที่เหมาะกับคุณผ่านแบบสอบถามสั้น ๆ <br />
+        “กรุณาทำแบบสอบถามต่อไปนี้เพื่อรับชมสื่อวิดีโอของสาขาวิชาที่เหมาะกับคุณ”
       </p>
-      <p class="subtitle-sub">
-        “กรุณาทำแบบสอบถามต่อไปนี้เพื่อรับชมสื่อวีดีโอ ของสาขาวิชาที่เหมาะกับคุณ”
-      </p>
+
       <nuxt-link class="btn-link" to="/selectChoice/page1">
         <b-button>เริ่มทำแบบสอบถาม</b-button>
       </nuxt-link>
@@ -37,7 +38,7 @@ html,
 .bigContainer {
   justify-content: center;
   align-items: center;
-  padding: 90px;
+  padding: 60px;
   display: flex;
   flex-direction: column;
   background-image: url('~assets/backgroundCom.png');
@@ -46,7 +47,7 @@ html,
 }
 .title {
   font-weight: bold;
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: center;
 }
 .subtitle {
@@ -54,10 +55,8 @@ html,
   font-weight: 300;
   font-size: 2vw;
 }
-.subtitle-sub{
-  text-align: center;
-  font-weight: 300;
-  font-size: 2.5vw;
+.subtitie-bold {
+  font-weight: 700;
 }
 .btn-secondary {
   background-color: #feb249;
@@ -71,15 +70,18 @@ html,
 .btn-link {
   width: 25%;
 }
-@media screen and (min-width: 1151px) {
-  img {
-    display: none;
-  }
+img {
+  width: 20%;
+  margin-bottom: 2%;
 }
 @media screen and (max-width: 1150px) {
   .bigContainer {
-    margin-top: 8%;
+    margin-top: 20%;
     background-image: none;
+  }
+  img {
+    width: 50%;
+    margin-bottom: 5%;
   }
   .title {
     font-size: 4.5vw;
@@ -93,14 +95,11 @@ html,
   .btn-link {
     width: 40%;
   }
-  img {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 716px) {
   .bigContainer {
     padding: 7vw;
-    margin-top: 6vh;
+    margin-top: 15vh;
   }
   .btn-secondary {
     font-size: 4vw;

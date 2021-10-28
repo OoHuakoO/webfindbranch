@@ -53,7 +53,7 @@ export default {
           check: false,
         },
         {
-          name: 'Storytelling(การเล่าเรื่อง,Storyboard,การสร้างเกม,สื่อดิจิตอล)',
+          name: 'Storytelling (การเล่าเรื่อง, Storyboard, การสร้างเกม, สื่อดิจิตอล)',
           check: false,
         },
       ],
@@ -71,7 +71,7 @@ export default {
               .then((res) => {
                 console.log(JSON.stringify(res.data))
               })
-          } else if (item.name === 'Storytelling(การเล่าเรื่อง,Storyboard,การสร้างเกม,สื่อดิจิตอล)') {
+          } else if (item.name === 'Storytelling (การเล่าเรื่อง, Storyboard, การสร้างเกม, สื่อดิจิตอล)') {
             await this.$axios
               .post('https://serverwebfindbranch.herokuapp.com/branch', {
                 branchName: 'GIM',
@@ -100,7 +100,7 @@ export default {
         this.pathNavigate = '/selectBranch/สาขาวิชาเทคโนโลยีสารสนเทศ'
       } else if (
         this.choice[index].check &&
-        this.choice[index].name === 'Storytelling(การเล่าเรื่อง,Storyboard,การสร้างเกม,สื่อดิจิตอล)'
+        this.choice[index].name === 'Storytelling (การเล่าเรื่อง, Storyboard, การสร้างเกม, สื่อดิจิตอล)'
       ) {
         this.pathNavigate = '/selectBranch/สาขาวิชาเกมและสื่อเชิงโต้ตอบ'
       }

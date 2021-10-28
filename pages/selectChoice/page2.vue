@@ -7,7 +7,7 @@
       <div class="flexButton">
         <div class="columnButton">
           <div
-            v-for="(item, index) in choice.slice(0, 5)"
+            v-for="(item, index) in choice.slice(0, 4)"
             class="rowButton"
             :key="index"
           >
@@ -28,21 +28,21 @@
         </div>
         <div class="columnButton">
           <div
-            v-for="(item, index) in choice.slice(5, 10)"
+            v-for="(item, index) in choice.slice(4, 9)"
             class="rowButton"
             :key="index"
           >
             <div
-              @click="selectedChoice(index + 5)"
+              @click="selectedChoice(index + 4)"
               :class="
-                choiceDisable && !choice[index + 5].check
+                choiceDisable && !choice[index + 4].check
                   ? 'disableRadio'
-                  : choice[index + 5].check
+                  : choice[index + 4].check
                   ? 'activeRadio'
                   : 'nonActiveRadio'
               "
             >
-              <div class="smallCircle" v-if="choice[index + 5].check"></div>
+              <div class="smallCircle" v-if="choice[index + 4].check"></div>
             </div>
             <span> {{ item.name }}</span>
           </div>
@@ -90,7 +90,7 @@ export default {
           check: false,
         },
         {
-          name: 'โมเดล2D-3D',
+          name: 'โมเดล 2D-3D',
           check: false,
         },
         {
@@ -98,7 +98,7 @@ export default {
           check: false,
         },
         {
-          name: 'ธุรกิจอุสาหกรรมเกม',
+          name: 'ธุรกิจอุตสาหกรรมเกม',
           check: false,
         },
         {
@@ -168,11 +168,11 @@ export default {
             this.pointBranch.pointIT = this.pointBranch.pointIT + 1
           } else if (item.name === 'ระบบสารสนเทศภายในองค์กร') {
             this.pointBranch.pointIT = this.pointBranch.pointIT + 1
-          } else if (item.name === 'โมเดล2D-3D') {
+          } else if (item.name === 'โมเดล 2D-3D') {
             this.pointBranch.pointGIM = this.pointBranch.pointGIM + 1
           } else if (item.name === 'การสร้างและพัฒนาเกม') {
             this.pointBranch.pointGIM = this.pointBranch.pointGIM + 1
-          } else if (item.name === 'ธุรกิจอุสาหกรรมเกม') {
+          } else if (item.name === 'ธุรกิจอุตสาหกรรมเกม') {
             this.pointBranch.pointGIM = this.pointBranch.pointGIM + 1
           } else if (item.name === 'พัฒนาแอปพลิเคชัน') {
             this.pointBranch.pointIT = this.pointBranch.pointIT + 0.5

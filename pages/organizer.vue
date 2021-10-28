@@ -41,19 +41,19 @@ export default {
       organizer: [
         {
           name: 'ดุลยภาพ ศรีอำนวย',
-          faculty: 'นักศึกษา คณะเทคโนโลยีสารสนเทสและนวัตกรรม',
-          branch: 'สาขาวิชา เทคโนโลยีสารสนเทศและนวัตรกรรม',
+          faculty: 'นักศึกษา คณะเทคโนโลยีสารสนเทศและนวัตกรรม',
+          branch: 'สาขาวิชา เทคโนโลยีสารสนเทศและนวัตกรรม',
           university: 'มหาวิทยาลัยกรุงเทพ',
           email: 'E-mail : mingplagad@gmail.com',
           picture: require('@/assets/ming.png'),
         },
         {
           name: 'เธียรนรา อิทธิปาทานันท์',
-          faculty: 'นักศึกษา คณะเทคโนโลยีสารสนเทสและนวัตกรรม',
-          branch: 'สาขาวิชา เทคโนโลยีสารสนเทศและนวัตรกรรม',
+          faculty: 'นักศึกษา คณะเทคโนโลยีสารสนเทศและนวัตกรรม',
+          branch: 'สาขาวิชา เทคโนโลยีสารสนเทศและนวัตกรรม',
           university: 'มหาวิทยาลัยกรุงเทพ',
           email: 'E-mail : ihqharain@gmail.com',
-          picture: require('@/assets/tien.png'),
+          picture: require('@/assets/tien.jpg'),
         },
       ],
     }
