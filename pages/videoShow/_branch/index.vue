@@ -76,12 +76,12 @@ html,
 .title {
   color: #feb249;
   font-weight: bold;
-  font-size: 3vw;
+  font-size: 2.5vw;
   margin-bottom: 1%;
   text-align: center;
 }
 .video {
-  width: 55%;
+  width: 52%;
 }
 .yellowText {
   color: #feb249;

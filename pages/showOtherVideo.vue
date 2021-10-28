@@ -41,19 +41,19 @@ export default {
       itemOtherVideo: [
         {
           name: 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ',
-          picture: 'https://bahmansport.com/media/com_store/images/empty.png',
+          picture: require('@/assets/otherGIM.png'),
         },
         {
           name: 'สาขาวิชาวิทยาการคอมพิวเตอร์',
-          picture: 'https://bahmansport.com/media/com_store/images/empty.png',
+          picture: require('@/assets/otherCS.png'),
         },
         {
           name: 'สาขาวิชาเทคโนโลยีสารสนเทศ',
-          picture: 'https://bahmansport.com/media/com_store/images/empty.png',
+          picture: require('@/assets/otherIT.png'),
         },
         {
           name: 'สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล',
-          picture: 'https://bahmansport.com/media/com_store/images/empty.png',
+          picture: require('@/assets/otherDSC.png'),
         },
       ],
     }
