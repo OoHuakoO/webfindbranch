@@ -9,7 +9,7 @@
         controls="controls"
         @ended="endedVideo"
       >
-        <source :src="require('@/assets/IT.mp4')" type="video/mp4" />
+        <source :src="require('@/assets/IT new.mp4')" type="video/mp4" />
       </video>
       <video
         v-if="branch == 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ'"
@@ -17,7 +17,7 @@
         controls="controls"
         @ended="endedVideo"
       >
-        <source :src="require('@/assets/testVideo.mp4')" type="video/mp4" />
+        <source :src="require('@/assets/GIM new.mp4')" type="video/mp4" />
       </video>
       <video
         v-if="branch == 'สาขาวิชาวิทยาการคอมพิวเตอร์'"
@@ -25,7 +25,7 @@
         controls="controls"
         @ended="endedVideo"
       >
-        <source :src="require('@/assets/testVideo.mp4')" type="video/mp4" />
+        <source :src="require('@/assets/CS new.mp4')" type="video/mp4" />
       </video>
       <video
         v-if="
@@ -36,7 +36,7 @@
         controls="controls"
         @ended="endedVideo"
       >
-        <source :src="require('@/assets/DataScience.mp4')" type="video/mp4" />
+        <source :src="require('@/assets/Cybersecurity new.mp4')" type="video/mp4" />
       </video>
     </div>
   </div>
