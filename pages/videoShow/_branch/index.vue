@@ -9,7 +9,7 @@
         controls="controls"
         @ended="endedVideo"
       >
-        <source src="https://res.cloudinary.com/smilejob/video/upload/v1637241607/IT_new_b00ncv.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/smilejob/video/upload/v1637661732/it2_ngfxns.mp4" type="video/mp4" />
       </video>
       <video
         v-if="branch == 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ'"
@@ -17,7 +17,7 @@
         controls="controls"
         @ended="endedVideo"
       >
-        <source src="https://res.cloudinary.com/smilejob/video/upload/v1637242925/GIM_new_devovr.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/smilejob/video/upload/v1637661729/gim2_glh2nb.mp4" type="video/mp4" />
       </video>
       <video
         v-if="branch == 'สาขาวิชาวิทยาการคอมพิวเตอร์'"
@@ -25,7 +25,7 @@
         controls="controls"
         @ended="endedVideo"
       >
-        <source src="https://res.cloudinary.com/smilejob/video/upload/v1637242920/CS_new_yodvx6.mp4" type="video/mp4" />
+        <source src="https://res.cloudinary.com/smilejob/video/upload/v1637661728/cs2_nfcis4.mp4" type="video/mp4" />
       </video>
       <video
         v-if="
@@ -37,7 +37,7 @@
         @ended="endedVideo"
       >
         <source
-          src="https://res.cloudinary.com/smilejob/video/upload/v1637242919/Cybersecurity_new_uwoh2u.mp4"
+          src="https://res.cloudinary.com/smilejob/video/upload/v1637661728/ds2_sisgd2.mp4"
           type="video/mp4"
         />
       </video>
