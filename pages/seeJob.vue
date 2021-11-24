@@ -70,6 +70,14 @@
           </b-row>
         </b-card>
       </div>
+      <div class="buttomContainer">
+        <p class="formText">ขอบคุณสำหรับการเข้าร่วมกิจกรรม</p>
+        <hr class="line" />
+        <p class="subtitleFormText">กรุณาทำแบบสอบถามหลังหลังเข้าร่วมกิจกรรม</p>
+        <a class="subtitleFormText" href="https://forms.gle/MykTAttwrmsTw1FK6"
+          >คลิกที่นี่เพื่อทำแบบสอบถาม</a
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -154,6 +162,10 @@ export default {
   font-family: 'Sukhumvit';
 }
 html,
+hr.line {
+  border: 1px solid #c5c6d0;
+  border-radius: 1px;
+}
 .body {
   min-height: 100%;
 }
@@ -208,12 +220,36 @@ html,
 .btn-link {
   width: 30%;
 }
-
+.formText {
+  font-size: 2vw;
+  color: 'black';
+  font-weight: 500;
+}
+.subtitleFormText {
+  font-size: 1vw;
+  color: 'black';
+}
+.buttomContainer {
+  width: 75%;
+  margin-top: 2%;
+}
 @media screen and (max-width: 1150px) {
   .title {
     font-size: 4vw;
   }
   .boxCard {
+    width: 95%;
+  }
+  .formText {
+    font-size: 2.5vw;
+    color: 'black';
+    font-weight: 500;
+  }
+  .subtitleFormText {
+    font-size: 1.5vw;
+    color: 'black';
+  }
+  .buttomContainer {
     width: 95%;
   }
   .titleDetail {
@@ -243,6 +279,20 @@ html,
     margin-bottom: 3%;
   }
   .boxCard {
+    width: 80%;
+  }
+  .formText {
+    font-size: 3.5vw;
+    color: 'black';
+    font-weight: 500;
+    margin-bottom: 0px;
+  }
+  .subtitleFormText {
+    font-size: 2.5vw;
+    color: 'black';
+    margin-bottom: 0px;
+  }
+  .buttomContainer {
     width: 80%;
   }
   .titleDetail {
