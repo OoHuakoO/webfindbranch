@@ -74,7 +74,7 @@
         <p class="formText">ขอบคุณสำหรับการเข้าร่วมกิจกรรม</p>
         <hr class="line" />
         <p class="subtitleFormText">กรุณาทำแบบสอบถามหลังหลังเข้าร่วมกิจกรรม</p>
-        <a class="subtitleFormText" href="https://forms.gle/MykTAttwrmsTw1FK6"
+        <a class="subtitleFormText" href="https://docs.google.com/forms/d/e/1FAIpQLSfIPKTmQfJFWR2dSPANDbIB3qDWoa5jngU3I7FN1bCQrd4jjg/viewform"
           >คลิกที่นี่เพื่อทำแบบสอบถาม</a
         >
       </div>
