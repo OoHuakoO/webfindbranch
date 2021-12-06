@@ -42,7 +42,7 @@ export default {
         {
           name: 'ดุลยภาพ ศรีอำนวย',
           faculty: 'นักศึกษา คณะเทคโนโลยีสารสนเทศและนวัตกรรม',
-          branch: 'สาขาวิชา เทคโนโลยีสารสนเทศและนวัตกรรม',
+          branch: 'สาขาวิชา เทคโนโลยีสารสนเทศ',
           university: 'มหาวิทยาลัยกรุงเทพ',
           email: 'E-mail : mingplagad@gmail.com',
           picture: require('@/assets/ming.png'),
@@ -50,7 +50,7 @@ export default {
         {
           name: 'เธียรนรา อิทธิปาทานันท์',
           faculty: 'นักศึกษา คณะเทคโนโลยีสารสนเทศและนวัตกรรม',
-          branch: 'สาขาวิชา เทคโนโลยีสารสนเทศและนวัตกรรม',
+          branch: 'สาขาวิชา เทคโนโลยีสารสนเทศ',
           university: 'มหาวิทยาลัยกรุงเทพ',
           email: 'E-mail : ihqharain@gmail.com',
           picture: require('@/assets/tien.jpg'),

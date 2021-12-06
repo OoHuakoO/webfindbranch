@@ -10,10 +10,11 @@
             class="leftImg"
           />
         </div>
+        <p>{{ ok }}</p>
         <p class="jobAfterLearn">อาชีพหลังจบการอาชีพหลังจบการศึกษา</p>
       </nuxt-link>
       <div class="rightContainer">
-        <p class="textSeeVideo">ดูวีดีโอสาขาอื่นๆ</p>
+        <p class="textSeeVideo">ดูวีดีโอสาขา'อื่น ๆ'</p>
         <nuxt-link
           v-for="(item, index) in itemOtherVideo"
           :key="index"
@@ -22,7 +23,7 @@
         >
           <img :src="item.picture" alt="Image" class="rightImg" />
           <div class="boxTextVideo">
-            <span>{{ item.name }}</span>
+            <p>{{ item.name }}</p>
           </div>
         </nuxt-link>
       </div>
