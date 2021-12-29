@@ -3,7 +3,7 @@
     <Header />
     <div class="bigContainer">
       <div class="Container">
-        <p class="textSeeVideo">ดูวีดีโอสาขาอื่นๆ</p>
+        <p class="textSeeVideo">ดูวิดีโอสาขาอื่น ๆ</p>
         <nuxt-link
           v-for="(item, index) in itemOtherVideo"
           :key="index"
