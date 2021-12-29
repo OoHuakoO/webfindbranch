@@ -22,13 +22,15 @@
           path: `/videoShow/${branch}`,
         }"
       >
-        <b-button>รับชมวีดีโอ</b-button>
+        <b-button style="color: black">รับชมวิดีโอ</b-button>
       </nuxt-link>
     </div>
+    <Footer />
   </div>
 </template>
 <script>
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 export default {
   components: {
     Header,
@@ -77,9 +79,7 @@ export default {
       } else if (this.$route.params.branch === 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ') {
         ;(this.picture = require('@/assets/gim.png')),
           (this.branch = 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ')
-      } else if (
-        this.$route.params.branch === 'สาขาวิชาวิทยาการคอมพิวเตอร์'
-      ) {
+      } else if (this.$route.params.branch === 'สาขาวิชาวิทยาการคอมพิวเตอร์') {
         ;(this.picture = require('@/assets/cs.png')),
           (this.branch = 'สาขาวิชาวิทยาการคอมพิวเตอร์')
       }
@@ -116,6 +116,7 @@ export default {
 html,
 .body {
   min-height: 100%;
+  margin-bottom: 5%;
 }
 .bigContainer {
   justify-content: center;
@@ -136,7 +137,11 @@ html,
   font-weight: bold;
   font-size: 2vw;
   text-align: center;
-  color: #feb249;
+  padding: 10px;
+  background-color: #feb249;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .subtitle {
   text-align: center;

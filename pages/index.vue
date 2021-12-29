@@ -17,10 +17,12 @@
         <b-button>เริ่มทำแบบสอบถาม</b-button>
       </nuxt-link>
     </div>
+    <Footer />
   </div>
 </template>
 <script>
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 export default {
   components: {
     Header,
@@ -34,6 +36,7 @@ export default {
 html,
 .body {
   min-height: 100%;
+   margin-bottom: 5%;
 }
 .bigContainer {
   justify-content: center;

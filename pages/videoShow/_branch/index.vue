@@ -9,7 +9,10 @@
         controls="controls"
         @ended="endedVideo"
       >
-        <source src="https://res.cloudinary.com/smilejob/video/upload/v1640095354/IT_kjnhxy.mp4" type="video/mp4" />
+        <source
+          src="https://res.cloudinary.com/smilejob/video/upload/v1640095354/IT_kjnhxy.mp4"
+          type="video/mp4"
+        />
       </video>
       <video
         v-if="branch == 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ'"
@@ -17,7 +20,10 @@
         controls="controls"
         @ended="endedVideo"
       >
-        <source src="https://res.cloudinary.com/smilejob/video/upload/v1640095395/GIM_e1p5qh.mp4" type="video/mp4" />
+        <source
+          src="https://res.cloudinary.com/smilejob/video/upload/v1640095395/GIM_e1p5qh.mp4"
+          type="video/mp4"
+        />
       </video>
       <video
         v-if="branch == 'สาขาวิชาวิทยาการคอมพิวเตอร์'"
@@ -25,7 +31,10 @@
         controls="controls"
         @ended="endedVideo"
       >
-        <source src="https://res.cloudinary.com/smilejob/video/upload/v1640095360/CS_mjyc6j.mp4" type="video/mp4" />
+        <source
+          src="https://res.cloudinary.com/smilejob/video/upload/v1640095360/CS_mjyc6j.mp4"
+          type="video/mp4"
+        />
       </video>
       <video
         v-if="
@@ -41,11 +50,21 @@
           type="video/mp4"
         />
       </video>
+      <nuxt-link
+        class="btn-link"
+        :to="{
+          path: `/jobEachBranch/${branch}`,
+        }"
+      >
+        <b-button style="color: black">อาชีพหลังจบการศึกษา</b-button>
+      </nuxt-link>
     </div>
+       <Footer />
   </div>
 </template>
 <script>
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 import VideoPlayer from 'nuxt-video-player'
 require('nuxt-video-player/src/assets/css/main.css')
 export default {
@@ -62,7 +81,7 @@ export default {
   methods: {
     endedVideo() {
       this.$router.push({
-        path: '/showOtherVideo',
+        path: `/jobEachBranch/${this.branch}`,
       })
     },
   },
@@ -72,6 +91,7 @@ export default {
 html,
 .body {
   min-height: 100%;
+   margin-bottom: 5%;
 }
 * {
   font-family: 'Sukhumvit';
@@ -83,6 +103,15 @@ html,
   margin-bottom: 1%;
   text-align: center;
 }
+.btn-secondary {
+  background-color: #feb249;
+  border-color: #feb249;
+  width: 100%;
+  padding: 1vw;
+  font-size: 2vw;
+  border-radius: 10px;
+  margin-top: 20%;
+}
 .video {
   width: 52%;
 }
@@ -91,6 +120,9 @@ html,
 }
 .textPromote {
   text-align: center;
+}
+.btn-link {
+  width: 25%;
 }
 .container {
   display: flex;
@@ -121,6 +153,9 @@ html,
     font-size: 4vw;
     margin-bottom: 5%;
   }
+  .btn-link {
+    width: 30%;
+  }
   .container {
     width: 70%;
     margin-top: 5%;
@@ -130,11 +165,20 @@ html,
   .video {
     width: 90%;
   }
+  .btn-link {
+    width: 35%;
+  }
   .title {
     color: #feb249;
     font-weight: bold;
     font-size: 4vw;
     margin-bottom: 7%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .btn-link {
+    width: 45%;
   }
 }
 </style>

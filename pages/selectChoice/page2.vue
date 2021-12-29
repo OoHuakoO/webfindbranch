@@ -61,11 +61,13 @@
         <b-button class="buttonDisable">ถัดไป</b-button>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 
 <script>
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 export default {
   components: {
     Header,
@@ -227,6 +229,7 @@ export default {
 html,
 .body {
   min-height: 100%;
+  margin-bottom: 5%;
 }
 span {
   margin-left: 10px;
@@ -334,7 +337,7 @@ span {
 }
 @media screen and (max-width: 1150px) {
   .bigContainer {
-  padding: 3vw;
+    padding: 3vw;
     margin-top: 20vh;
   }
   .title {

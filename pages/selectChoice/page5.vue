@@ -34,10 +34,12 @@
         <b-button class="buttonDisable">ถัดไป</b-button>
       </div>
     </div>
+    <Footer />
   </div>
 </template>
 <script>
 import Header from '@/components/header'
+import Footer from '@/components/footer'
 export default {
   components: {
     Header,
@@ -61,7 +63,7 @@ export default {
   },
   methods: {
     async saveBranch() {
-      this.choice.map( async(item) => {
+      this.choice.map(async (item) => {
         if (item.check) {
           if (item.name === 'การพัฒนาแอปพลิเคชัน') {
             await this.$axios
@@ -128,6 +130,7 @@ export default {
 html,
 .body {
   min-height: 100%;
+   margin-bottom: 5%;
 }
 span {
   margin-left: 10px;
@@ -157,7 +160,7 @@ span {
   border-color: #feb249;
   width: 100%;
   padding: 1vw;
-font-size: 1.5vw;
+  font-size: 1.5vw;
   border-radius: 10px;
   margin-top: 1vh;
 }
@@ -169,7 +172,7 @@ font-size: 1.5vw;
   border-color: #9a9a9c;
   width: 100%;
   padding: 1vw;
-   font-size: 1.5vw;
+  font-size: 1.5vw;
   border-radius: 10px;
   margin-top: 1vh;
 }
@@ -220,11 +223,11 @@ font-size: 1.5vw;
   margin-bottom: 20px;
 }
 .boxChoice {
- margin-bottom: 5%;
+  margin-bottom: 5%;
   margin-top: 5%;
 }
 .btn-link {
-   width: 20%;
+  width: 20%;
 }
 @media screen and (max-width: 1150px) {
   .bigContainer {
