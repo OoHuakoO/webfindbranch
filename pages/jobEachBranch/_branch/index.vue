@@ -2,7 +2,293 @@
   <div class="body">
     <Header />
     <div class="bigContainer">
-      <div class="Container">
+      <div class="leftContainer">
+        <p class="titleJob">สาขาอาชีพที่สามารถนำไปต่อยอดในอนาคต</p>
+        <div v-if="branch == 'สาขาวิชาเทคโนโลยีสารสนเทศ'" class="mt-4 boxCard">
+          <b-card
+            v-for="(item, index) in jobIT"
+            :key="index"
+            class="cardResponsiveCom"
+          >
+            <b-row v-if="(index + 1) % 2 != 0" no-gutters>
+              <b-col md="4">
+                <b-card-img
+                  :src="item.picture"
+                  alt="Image"
+                  class="rounded-1"
+                ></b-card-img>
+              </b-col>
+              <b-col md="8">
+                <b-card-text class="rightBox">
+                  <span class="titleDetail">{{ item.titleDetail }}</span>
+                  <p class="subtitleDetail">
+                    {{ item.subtitleDetail }}
+                  </p>
+                </b-card-text>
+              </b-col>
+            </b-row>
+
+            <b-row v-if="(index + 1) % 2 == 0" no-gutters>
+              <b-col md="8">
+                <b-card-text class="leftBox">
+                  <span class="titleDetail">{{ item.titleDetail }}</span>
+                  <p class="subtitleDetail">
+                    {{ item.subtitleDetail }}
+                  </p>
+                </b-card-text>
+              </b-col>
+              <b-col md="4">
+                <b-card-img
+                  :src="item.picture"
+                  alt="Image"
+                  class="rounded-1"
+                ></b-card-img>
+              </b-col>
+            </b-row>
+          </b-card>
+
+          <b-card
+            v-for="(item, index) in jobIT"
+            :key="index"
+            class="cardResponsiveMobile"
+          >
+            <b-row no-gutters>
+              <b-col md="4">
+                <b-card-img
+                  :src="item.picture"
+                  alt="Image"
+                  class="rounded-1"
+                ></b-card-img>
+              </b-col>
+              <b-col md="8">
+                <b-card-text class="rightBox">
+                  <span class="titleDetail">{{ item.titleDetail }}</span>
+                  <p class="subtitleDetail">
+                    {{ item.subtitleDetail }}
+                  </p>
+                </b-card-text>
+              </b-col>
+            </b-row>
+          </b-card>
+        </div>
+
+        <div
+          v-if="branch == 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ'"
+          class="mt-4 boxCard"
+        >
+          <b-card
+            v-for="(item, index) in jobGIM"
+            :key="index"
+            class="cardResponsiveCom"
+          >
+            <b-row v-if="(index + 1) % 2 != 0" no-gutters>
+              <b-col md="4">
+                <b-card-img
+                  :src="item.picture"
+                  alt="Image"
+                  class="rounded-1"
+                ></b-card-img>
+              </b-col>
+              <b-col md="8">
+                <b-card-text class="rightBox">
+                  <span class="titleDetail">{{ item.titleDetail }}</span>
+                  <p class="subtitleDetail">
+                    {{ item.subtitleDetail }}
+                  </p>
+                </b-card-text>
+              </b-col>
+            </b-row>
+
+            <b-row v-if="(index + 1) % 2 == 0" no-gutters>
+              <b-col md="8">
+                <b-card-text class="leftBox">
+                  <span class="titleDetail">{{ item.titleDetail }}</span>
+                  <p class="subtitleDetail">
+                    {{ item.subtitleDetail }}
+                  </p>
+                </b-card-text>
+              </b-col>
+              <b-col md="4">
+                <b-card-img
+                  :src="item.picture"
+                  alt="Image"
+                  class="rounded-1"
+                ></b-card-img>
+              </b-col>
+            </b-row>
+          </b-card>
+
+          <b-card
+            v-for="(item, index) in jobGIM"
+            :key="index"
+            class="cardResponsiveMobile"
+          >
+            <b-row no-gutters>
+              <b-col md="4">
+                <b-card-img
+                  :src="item.picture"
+                  alt="Image"
+                  class="rounded-1"
+                ></b-card-img>
+              </b-col>
+              <b-col md="8">
+                <b-card-text class="rightBox">
+                  <span class="titleDetail">{{ item.titleDetail }}</span>
+                  <p class="subtitleDetail">
+                    {{ item.subtitleDetail }}
+                  </p>
+                </b-card-text>
+              </b-col>
+            </b-row>
+          </b-card>
+        </div>
+
+        <div
+          v-if="branch == 'สาขาวิชาวิทยาการคอมพิวเตอร์'"
+          class="mt-4 boxCard"
+        >
+          <b-card
+            v-for="(item, index) in jobCS"
+            :key="index"
+            class="cardResponsiveCom"
+          >
+            <b-row v-if="(index + 1) % 2 != 0" no-gutters>
+              <b-col md="4">
+                <b-card-img
+                  :src="item.picture"
+                  alt="Image"
+                  class="rounded-1"
+                ></b-card-img>
+              </b-col>
+              <b-col md="8">
+                <b-card-text class="rightBox">
+                  <span class="titleDetail">{{ item.titleDetail }}</span>
+                  <p class="subtitleDetail">
+                    {{ item.subtitleDetail }}
+                  </p>
+                </b-card-text>
+              </b-col>
+            </b-row>
+
+            <b-row v-if="(index + 1) % 2 == 0" no-gutters>
+              <b-col md="8">
+                <b-card-text class="leftBox">
+                  <span class="titleDetail">{{ item.titleDetail }}</span>
+                  <p class="subtitleDetail">
+                    {{ item.subtitleDetail }}
+                  </p>
+                </b-card-text>
+              </b-col>
+              <b-col md="4">
+                <b-card-img
+                  :src="item.picture"
+                  alt="Image"
+                  class="rounded-1"
+                ></b-card-img>
+              </b-col>
+            </b-row>
+          </b-card>
+
+          <b-card
+            v-for="(item, index) in jobCS"
+            :key="index"
+            class="cardResponsiveMobile"
+          >
+            <b-row no-gutters>
+              <b-col md="4">
+                <b-card-img
+                  :src="item.picture"
+                  alt="Image"
+                  class="rounded-1"
+                ></b-card-img>
+              </b-col>
+              <b-col md="8">
+                <b-card-text class="rightBox">
+                  <span class="titleDetail">{{ item.titleDetail }}</span>
+                  <p class="subtitleDetail">
+                    {{ item.subtitleDetail }}
+                  </p>
+                </b-card-text>
+              </b-col>
+            </b-row>
+          </b-card>
+        </div>
+
+        <div
+          v-if="
+            branch ==
+            'สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล'
+          "
+          class="mt-4 boxCard"
+        >
+          <b-card
+            v-for="(item, index) in jobDS"
+            :key="index"
+            class="cardResponsiveCom"
+          >
+            <b-row v-if="(index + 1) % 2 != 0" no-gutters>
+              <b-col md="4">
+                <b-card-img
+                  :src="item.picture"
+                  alt="Image"
+                  class="rounded-1"
+                ></b-card-img>
+              </b-col>
+              <b-col md="8">
+                <b-card-text class="rightBox">
+                  <span class="titleDetail">{{ item.titleDetail }}</span>
+                  <p class="subtitleDetail">
+                    {{ item.subtitleDetail }}
+                  </p>
+                </b-card-text>
+              </b-col>
+            </b-row>
+
+            <b-row v-if="(index + 1) % 2 == 0" no-gutters>
+              <b-col md="8">
+                <b-card-text class="leftBox">
+                  <span class="titleDetail">{{ item.titleDetail }}</span>
+                  <p class="subtitleDetail">
+                    {{ item.subtitleDetail }}
+                  </p>
+                </b-card-text>
+              </b-col>
+              <b-col md="4">
+                <b-card-img
+                  :src="item.picture"
+                  alt="Image"
+                  class="rounded-1"
+                ></b-card-img>
+              </b-col>
+            </b-row>
+          </b-card>
+
+          <b-card
+            v-for="(item, index) in jobDS"
+            :key="index"
+            class="cardResponsiveMobile"
+          >
+            <b-row no-gutters>
+              <b-col md="4">
+                <b-card-img
+                  :src="item.picture"
+                  alt="Image"
+                  class="rounded-1"
+                ></b-card-img>
+              </b-col>
+              <b-col md="8">
+                <b-card-text class="rightBox">
+                  <span class="titleDetail">{{ item.titleDetail }}</span>
+                  <p class="subtitleDetail">
+                    {{ item.subtitleDetail }}
+                  </p>
+                </b-card-text>
+              </b-col>
+            </b-row>
+          </b-card>
+        </div>
+      </div>
+      <div class="rightContainer">
         <p class="textSeeVideo">ดูวิดีโอสาขาอื่น ๆ</p>
         <nuxt-link
           v-for="(item, index) in itemOtherVideo"
@@ -16,287 +302,8 @@
           </div>
         </nuxt-link>
       </div>
-      <p class="titleJob">สาขาอาชีพที่สามารถนำไปต่อยอดในอนาคต</p>
-
-      <div v-if="branch == 'สาขาวิชาเทคโนโลยีสารสนเทศ'" class="mt-4 boxCard">
-        <b-card
-          v-for="(item, index) in jobIT"
-          :key="index"
-          class="cardResponsiveCom"
-        >
-          <b-row v-if="(index + 1) % 2 != 0" no-gutters>
-            <b-col md="4">
-              <b-card-img
-                :src="item.picture"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-            <b-col md="8">
-              <b-card-text class="rightBox">
-                <span class="titleDetail">{{ item.titleDetail }}</span>
-                <p class="subtitleDetail">
-                  {{ item.subtitleDetail }}
-                </p>
-              </b-card-text>
-            </b-col>
-          </b-row>
-
-          <b-row v-if="(index + 1) % 2 == 0" no-gutters>
-            <b-col md="8">
-              <b-card-text class="leftBox">
-                <span class="titleDetail">{{ item.titleDetail }}</span>
-                <p class="subtitleDetail">
-                  {{ item.subtitleDetail }}
-                </p>
-              </b-card-text>
-            </b-col>
-            <b-col md="4">
-              <b-card-img
-                :src="item.picture"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-          </b-row>
-        </b-card>
-
-        <b-card
-          v-for="(item, index) in jobIT"
-          :key="index"
-          class="cardResponsiveMobile"
-        >
-          <b-row no-gutters>
-            <b-col md="4">
-              <b-card-img
-                :src="item.picture"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-            <b-col md="8">
-              <b-card-text class="rightBox">
-                <span class="titleDetail">{{ item.titleDetail }}</span>
-                <p class="subtitleDetail">
-                  {{ item.subtitleDetail }}
-                </p>
-              </b-card-text>
-            </b-col>
-          </b-row>
-        </b-card>
-      </div>
-
-      <div v-if="branch == 'สาขาวิชาเกมและสื่อเชิงโต้ตอบ'" class="mt-4 boxCard">
-        <b-card
-          v-for="(item, index) in jobGIM"
-          :key="index"
-          class="cardResponsiveCom"
-        >
-          <b-row v-if="(index + 1) % 2 != 0" no-gutters>
-            <b-col md="4">
-              <b-card-img
-                :src="item.picture"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-            <b-col md="8">
-              <b-card-text class="rightBox">
-                <span class="titleDetail">{{ item.titleDetail }}</span>
-                <p class="subtitleDetail">
-                  {{ item.subtitleDetail }}
-                </p>
-              </b-card-text>
-            </b-col>
-          </b-row>
-
-          <b-row v-if="(index + 1) % 2 == 0" no-gutters>
-            <b-col md="8">
-              <b-card-text class="leftBox">
-                <span class="titleDetail">{{ item.titleDetail }}</span>
-                <p class="subtitleDetail">
-                  {{ item.subtitleDetail }}
-                </p>
-              </b-card-text>
-            </b-col>
-            <b-col md="4">
-              <b-card-img
-                :src="item.picture"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-          </b-row>
-        </b-card>
-
-        <b-card
-          v-for="(item, index) in jobGIM"
-          :key="index"
-          class="cardResponsiveMobile"
-        >
-          <b-row no-gutters>
-            <b-col md="4">
-              <b-card-img
-                :src="item.picture"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-            <b-col md="8">
-              <b-card-text class="rightBox">
-                <span class="titleDetail">{{ item.titleDetail }}</span>
-                <p class="subtitleDetail">
-                  {{ item.subtitleDetail }}
-                </p>
-              </b-card-text>
-            </b-col>
-          </b-row>
-        </b-card>
-      </div>
-
-      <div v-if="branch == 'สาขาวิชาวิทยาการคอมพิวเตอร์'" class="mt-4 boxCard">
-        <b-card
-          v-for="(item, index) in jobCS"
-          :key="index"
-          class="cardResponsiveCom"
-        >
-          <b-row v-if="(index + 1) % 2 != 0" no-gutters>
-            <b-col md="4">
-              <b-card-img
-                :src="item.picture"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-            <b-col md="8">
-              <b-card-text class="rightBox">
-                <span class="titleDetail">{{ item.titleDetail }}</span>
-                <p class="subtitleDetail">
-                  {{ item.subtitleDetail }}
-                </p>
-              </b-card-text>
-            </b-col>
-          </b-row>
-
-          <b-row v-if="(index + 1) % 2 == 0" no-gutters>
-            <b-col md="8">
-              <b-card-text class="leftBox">
-                <span class="titleDetail">{{ item.titleDetail }}</span>
-                <p class="subtitleDetail">
-                  {{ item.subtitleDetail }}
-                </p>
-              </b-card-text>
-            </b-col>
-            <b-col md="4">
-              <b-card-img
-                :src="item.picture"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-          </b-row>
-        </b-card>
-
-        <b-card
-          v-for="(item, index) in jobCS"
-          :key="index"
-          class="cardResponsiveMobile"
-        >
-          <b-row no-gutters>
-            <b-col md="4">
-              <b-card-img
-                :src="item.picture"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-            <b-col md="8">
-              <b-card-text class="rightBox">
-                <span class="titleDetail">{{ item.titleDetail }}</span>
-                <p class="subtitleDetail">
-                  {{ item.subtitleDetail }}
-                </p>
-              </b-card-text>
-            </b-col>
-          </b-row>
-        </b-card>
-      </div>
-
-      <div
-        v-if="
-          branch ==
-          'สาขาวิชาวิทยาการคอมพิวเตอร์ มุ่งเน้นความมั่นคงปลอดภัยไซเบอร์และวิทยาการข้อมูล'
-        "
-        class="mt-4 boxCard"
-      >
-        <b-card
-          v-for="(item, index) in jobDS"
-          :key="index"
-          class="cardResponsiveCom"
-        >
-          <b-row v-if="(index + 1) % 2 != 0" no-gutters>
-            <b-col md="4">
-              <b-card-img
-                :src="item.picture"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-            <b-col md="8">
-              <b-card-text class="rightBox">
-                <span class="titleDetail">{{ item.titleDetail }}</span>
-                <p class="subtitleDetail">
-                  {{ item.subtitleDetail }}
-                </p>
-              </b-card-text>
-            </b-col>
-          </b-row>
-
-          <b-row v-if="(index + 1) % 2 == 0" no-gutters>
-            <b-col md="8">
-              <b-card-text class="leftBox">
-                <span class="titleDetail">{{ item.titleDetail }}</span>
-                <p class="subtitleDetail">
-                  {{ item.subtitleDetail }}
-                </p>
-              </b-card-text>
-            </b-col>
-            <b-col md="4">
-              <b-card-img
-                :src="item.picture"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-          </b-row>
-        </b-card>
-
-        <b-card
-          v-for="(item, index) in jobDS"
-          :key="index"
-          class="cardResponsiveMobile"
-        >
-          <b-row no-gutters>
-            <b-col md="4">
-              <b-card-img
-                :src="item.picture"
-                alt="Image"
-                class="rounded-1"
-              ></b-card-img>
-            </b-col>
-            <b-col md="8">
-              <b-card-text class="rightBox">
-                <span class="titleDetail">{{ item.titleDetail }}</span>
-                <p class="subtitleDetail">
-                  {{ item.subtitleDetail }}
-                </p>
-              </b-card-text>
-            </b-col>
-          </b-row>
-        </b-card>
-      </div>
     </div>
-      <Footer />
+    <Footer />
   </div>
 </template>
 
@@ -435,14 +442,25 @@ export default {
 * {
   font-family: 'Sukhumvit';
 }
+p {
+    margin: 0px;
+  }
 html,
 .body {
   min-height: 100%;
   margin-bottom: 5%;
 }
+.leftContainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .textSeeVideo {
   font-size: 2.5vw;
   text-align: center;
+  margin-bottom: 6%
 }
 .rowVideo {
   display: flex;
@@ -453,7 +471,7 @@ html,
   justify-content: center;
 }
 .imgSeeOtherVideo {
-  width: 40%;
+  width: 30%;
   border-radius: 10px;
 }
 .rightBox {
@@ -468,13 +486,12 @@ html,
   height: 100%;
 }
 .boxCard {
-  width: 75%;
+  width: 100%;
 }
 .cardResponsiveCom {
   margin-bottom: 3%;
 }
 .titleJob {
-  font-weight: bold;
   font-size: 2.5vw;
   text-align: center;
 }
@@ -488,13 +505,12 @@ html,
   margin-top: 2%;
 }
 .bigContainer {
-  padding: 5vh 1vw 1vh 1vw;
-  align-items: center;
+  padding: 8vh 5vw 1vh 5vw;
   justify-content: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
-.Container {
+.rightContainer {
   width: 40%;
   margin-left: 5%;
   margin-bottom: 2%;
@@ -504,7 +520,7 @@ html,
   align-items: center;
   display: flex;
   width: 60%;
-  font-size: 1.5vw;
+  font-size: 1vw;
   margin-left: 5%;
   text-align: center;
   border-left: solid 2px #feb249;
@@ -519,7 +535,7 @@ html,
 
 @media screen and (max-width: 1150px) {
   .titleJob {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   .boxCard {
     width: 95%;
@@ -531,13 +547,13 @@ html,
     font-size: 1.4vw;
   }
   .bigContainer {
-    padding: 3vh 10vw 1vh 10vw;
+    padding: 3vh 1vw 1vh 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .Container {
-    width: 90%;
+  .rightContainer {
+    width: 70%;
     margin-top: 4%;
   }
   .textSeeVideo {
@@ -546,11 +562,11 @@ html,
     margin-top: 3%;
   }
   .imgSeeOtherVideo {
-    width: 45%;
+    width: 30%;
     border-radius: 10px;
   }
   .boxTextVideo {
-    font-size: 2.5vw;
+    font-size: 2vw;
     margin-left: 5%;
     padding: 10px;
   }
@@ -584,8 +600,15 @@ html,
     margin-top: 5%;
   }
   .titleJob {
+    font-size: 3.5vw;
     margin-bottom: 0%;
     margin-top: 5%;
+  }
+  .rightContainer {
+    margin-left: 0px;
+  }
+  .leftContainer {
+    width: 90%;
   }
 }
 </style>
