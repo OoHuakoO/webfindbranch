@@ -4,11 +4,7 @@
       <b-navbar-nav>
         <nuxt-link class="nav-item nav-link" to="/">หน้าแรก</nuxt-link>
       </b-navbar-nav>
-      <b-navbar-nav class="ml-auto">
-        <nuxt-link class="nav-item nav-link" to="/organizer">
-          <b-img src="~assets/Alert.svg" fluld />เกี่ยวกับผู้จัดทำ</nuxt-link
-        >
-      </b-navbar-nav>
+     
     </b-navbar>
   </div>
 </template>

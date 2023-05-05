@@ -2,8 +2,7 @@
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
       <span>
-        จัดทำโดย ดุลยภาพ ศรีอำนวย และเธียรนรา อิทธิปาทานันท์
-        มหาวิทยาลัยกรุงเทพ
+      
       </span>
     </b-navbar>
   </div>
