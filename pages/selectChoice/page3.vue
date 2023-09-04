@@ -67,7 +67,7 @@ export default {
         if (item.check) {
           if (item.name === 'การออกแบบระบบและการพัฒนาแอปพลิเคชัน') {
             await this.$axios
-              .post('https://serverwebfindbranch.herokuapp.com/branch', {
+              .post('https://webfindbranchserver.onrender.com/branch', {
                 branchName: 'IT',
               })
               .then((res) => {
@@ -75,7 +75,7 @@ export default {
               })
           } else if (item.name === 'Storytelling (การเล่าเรื่อง, Storyboard, การสร้างเกม, สื่อดิจิตอล)') {
             await this.$axios
-              .post('https://serverwebfindbranch.herokuapp.com/branch', {
+              .post('https://webfindbranchserver.onrender.com/branch', {
                 branchName: 'GIM',
               })
               .then((res) => {

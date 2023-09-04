@@ -67,7 +67,7 @@ export default {
         if (item.check) {
           if (item.name === 'การพัฒนาแอปพลิเคชัน') {
             await this.$axios
-              .post('https://serverwebfindbranch.herokuapp.com/branch', {
+              .post('https://webfindbranchserver.onrender.com/branch', {
                 branchName: 'CS',
               })
               .then((res) => {
@@ -75,7 +75,7 @@ export default {
               })
           } else if (item.name === 'การวิเคราะห์ข้อมูลและความปลอดภัย') {
             await this.$axios
-              .post('https://serverwebfindbranch.herokuapp.com/branch', {
+              .post('https://webfindbranchserver.onrender.com/branch', {
                 branchName: 'DSC',
               })
               .then((res) => {
